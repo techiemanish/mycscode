@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" 
+      type="/image/png" 
+      href="/html/home/logo.png">
+<title>MYCSCODE |Learn Free Web Tutorial</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="Description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, and PHP.">
+<meta name="Keywords" content="HTML,CSS,JavaScript,PHP,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips,mycscode,my,cs,code,BASIC TO ADVANCED,EASY TO LEARN,LEARN FREE WEB,ADVANCED START,TUTORIAL LEARN,islands,coding,Learn web Designing,learn web devlopment,">
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9227713632689850",
+    enable_page_level_ads: true
+  });
+</script>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+<style>
+.header {
+	background-color: dodgerblue;
+	color: white;
+	padding: 10px;
+	font-family: courier;
+	text-align: center;
+	}
+
+.topnav {
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 24px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.topnav a:hover {
+  background-color: dodgerblue;
+  color: black;
+}
+
+.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+a{
+    display: inline;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding:10px;
+    line-height: 25px;
+
+}
+a:hover{
+	background-color: dodgerblue;
+	color: black;
+}
+a:active {
+  background-color: grey;
+  color: black;
+		
+}
+
+#link {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding:10px;
+    font-size:20px;
+    line-height: 25px;
+    border-radius: 4px;
+    background-color:red;
+}
+
+
+#link:hover {
+    background-color:dodgerblue;
+    color: black;
+
+}
+
+#link:active{
+	background-color: #f1f1f1;
+	color: black;
+}
+	
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    background-color: dodgerblue;
+    color:black;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 40px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.code{
+    color: dodgerblue;
+}
+
+	
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    color: black;
+    text-align: center;
+    font-family:Verdana,sans-serif;
+    font-size:15px;
+
+}
+</style>
+</head>
+
+<body>
+<div class="header">
+  <h1>MYCSCODE</h1>
+<p style="text-align:right;font-size:25px;">Learn Free Web Tutorials.</p>
+</div>
+<div class="topnav" id="myTopnav">
+  <a href="/" class="active">Home</a>
+  <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+      <h1 style="text-align:center;color:white;">HTML Content</h1>
+  <a href="introduction">HTML Introduction</a>
+  <a href="editors">HTML Editors</a>
+  <a href="basic">HTML Basic</a>
+  <a href="elements">HTML Elements</a>
+  <a href="attributes">HTML Attributes</a>
+  <a href="headings">HTML Headings</a>
+  <a href="paragraphs">HTML Paragraphs</a>
+  <a href="styles">HTML Styles</a>
+  <a href="formatting">HTML Formatting</a>
+  <a href="quotations">HTML Quotations</a>
+  <a href="comments">HTML Comments</a>
+  <a href="colors">HTML Colors</a>
+  <a href="css">HTML Css</a>
+  <a href="links">HTML Links</a>
+  <a href="images">HTML Images</a>
+  <a href="tables">HTML Tables</a>
+  <a href="lists">HTML Lists</a>
+  <a href="blocks">HTML Blocks</a>
+  <a href="classes">HTML Classes</a>
+  <a href="id">HTML ID</a>
+  <a href="charset">HTML Charset</a>
+  <a href="forms">HTML Forms</a>
+  <a href="formelements">HTML Form Elements</a>
+  <a href="inputtypes">HTML Input Types</a>
+  <a href="inputattributes">HTML Input Attributes</a> 
+  </div>
+</div>
+
+<a style="font-size:25px;cursor:pointer;padding: 20px 24px;" onclick="openNav()">HTML</a>
+
+
+  <a href="/css/learncss">CSS</a>
+  <a href="/javascript/learnjavascript">JAVASCRIPT</a>
+  <a href="/php/learnphp">PHP</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;
+    <i class="fa fa-bars"></i>
+  </a>
+</div>    
+
+
+
+
+<div style="padding:15px 15px;font-size:25px">
+<marquee style="text-align:right;color:red;">Click on HTML to See the Content of the Tutorial.</marquee>
+
+<a id="link" href="headings" alt="Previous" title="Previous">Previous</a>
+
+<article style="background-color:#f1f1f1;padding-left:16px">
+
+<h2>HTML Paragraphs</h2>
+<p>HTML paragraphs are defined with the <code class="code">&lt;p&gt;</code> tag:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+&lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+&lt;p&gt;This is another paragraph.&lt;/p&gt;
+</code>
+</div>
+<p><strong>Note:</strong> Browsers automatically add some white space (a margin) before and after a paragraph.</p>
+
+<h2>HTML Display</h2>
+<p>You cannot be sure how HTML will be displayed.</p>
+<p>Large or small screens, and resized windows will create different results. </p>
+<p>With HTML, you cannot change the output by adding extra spaces or extra lines in your HTML code.</p>
+<p>The browser will remove any extra spaces and extra lines when the page is 
+displayed:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+ &lt;p&gt;<br>This paragraph<br>contains a lot of lines<br>in the source code,<br>but 
+ the browser <br>ignores it.<br>&lt;/p&gt;<br><br>&lt;p&gt;<br>This paragraph<br>contains&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ a lot of spaces<br>in the source&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ code,<br>but the&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; browser <br>ignores 
+ it.<br>&lt;/p&gt;
+ </code>
+ </div>
+
+<hr>
+<h2>Don't Forget the End Tag</h2>
+<p>Most browsers will display HTML correctly even if you forget the end tag:</p>
+<div style="border:solid">
+<h3>Example</h3>
+<code class="code">
+&lt;p&gt;This is a paragraph.<br>
+&lt;p&gt;This is another paragraph.
+</code>
+</div>
+
+<p>The example above will work in most browsers, but do not rely on it.</p>
+<p><strong>Note:</strong> Dropping the end tag can produce unexpected results or errors.</p>
+
+<hr>
+
+<h2>HTML Line Breaks</h2>
+<p>The HTML <code class="code">&lt;br&gt;</code> element defines a <strong>line break</strong>.</p>
+<p>Use <code class="code">&lt;br&gt;</code> if you want a line break (a new line) without starting a new paragraph:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+&lt;p&gt;This is&lt;br&gt;a paragraph&lt;br&gt;with line breaks.&lt;/p&gt;
+</code>
+</div>
+
+<p>The <code class="code">&lt;br&gt;</code> tag is an empty tag, which means that it has no end tag.</p>
+
+
+<hr>
+
+<h2>The Poem Problem</h2>
+<p>This poem will display on a single line:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+ &lt;p&gt;<br>&nbsp; My Bonnie lies over 
+ the ocean.<br><br>&nbsp; My Bonnie lies over the sea.<br><br>&nbsp; My Bonnie 
+ lies over the ocean.<br><br>&nbsp; Oh, bring back my Bonnie to me.<br>&lt;/p&gt;
+ </code>
+ </div>
+ 
+ <hr>
+<h2>The HTML <code class="code">&lt;pre&gt;</code> Element</h2>
+<p>The HTML <code class="code">&lt;pre&gt;</code> element defines preformatted text.</p>
+<p>The text inside a <code class="code">&lt;pre&gt;</code> element is displayed in a fixed-width font (usually 
+Courier), and it preserves both spaces and line breaks:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+ &lt;pre&gt;<br>&nbsp; My Bonnie lies over the ocean.<br>
+<br>&nbsp; My Bonnie lies over the sea.<br><br>&nbsp; My Bonnie lies over the 
+ocean.<br><br>&nbsp; Oh, bring back my Bonnie to me.<br>&lt;/pre&gt;
+</code>
+</div>
+<hr>
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<a id="link" href="styles" alt="Next" title="Next">Next</a>
+</div>
+
+<div class="footer">
+  <p><b>Designed</b> & <b>Developed</b> By<a href="http://instagram.com/itsmemanishtiwari">Manish Tiwari</a>.</p>
+<p><strong>DISCLAIMER:</strong> All website's content are constantly reviewed to avoid any kind of errors, but we cannot warrant full correctness of all content. 
+While using this site, you agree to have read and accepted our terms of use and privacy policy. <br>All Rights Reserved.&copy;</p>
+<strong>Follow us on</strong> <a href="http://fb.com/mycscode">Facebook</a>
+			 			 <a href="http://instagram.com/mycscode">Instagram</a>
+						 <a href="http://twitter.com/mycscode">Twitter</a>
+<br>
+<a href="termsofuse">Terms of Use</a>
+<a href="privacy">Privacy Policy</a>
+</div>
+
+
+</body>
+</html>

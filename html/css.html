@@ -1,0 +1,514 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" 
+      type="/image/png" 
+      href="/html/home/logo.png">
+<title>MYCSCODE |Learn Free Web Tutorial</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="Description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, and PHP.">
+<meta name="Keywords" content="HTML,CSS,JavaScript,PHP,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips,mycscode,my,cs,code,BASIC TO ADVANCED,EASY TO LEARN,LEARN FREE WEB,ADVANCED START,TUTORIAL LEARN,islands,coding,Learn web Designing,learn web devlopment,">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9227713632689850",
+    enable_page_level_ads: true
+  });
+</script>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+<style>
+.header {
+	background-color: dodgerblue;
+	color: white;
+	padding: 10px;
+	font-family: courier;
+	text-align: center;
+	}
+
+.topnav {
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 24px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.topnav a:hover {
+  background-color: dodgerblue;
+  color: black;
+}
+
+.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+a{
+    display: inline;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding:10px;
+    line-height: 25px;
+
+}
+a:hover{
+	background-color: dodgerblue;
+	color: black;
+}
+a:active {
+  background-color: grey;
+  color: black;
+		
+}
+
+#link {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding:10px;
+    font-size:20px;
+    line-height: 25px;
+    border-radius: 4px;
+    background-color:red;
+}
+
+
+#link:hover {
+    background-color:dodgerblue;
+    color: black;
+
+}
+
+#link:active{
+	background-color: #f1f1f1;
+	color: black;
+}
+	
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    background-color: dodgerblue;
+    color:black;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 40px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.code{
+    color: dodgerblue;
+}
+
+	
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    color: black;
+    text-align: center;
+    font-family:Verdana,sans-serif;
+    font-size:15px;
+
+}
+</style>
+</head>
+
+<body>
+<div class="header">
+  <h1>MYCSCODE</h1>
+<p style="text-align:right;font-size:25px;">Learn Free Web Tutorials.</p>
+</div>
+<div class="topnav" id="myTopnav">
+  <a href="/" class="active">Home</a>
+  <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+      <h1 style="text-align:center;color:white;">HTML Content</h1>
+  <a href="introduction">HTML Introduction</a>
+  <a href="editors">HTML Editors</a>
+  <a href="basic">HTML Basic</a>
+  <a href="elements">HTML Elements</a>
+  <a href="attributes">HTML Attributes</a>
+  <a href="headings">HTML Headings</a>
+  <a href="paragraphs">HTML Paragraphs</a>
+  <a href="styles">HTML Styles</a>
+  <a href="formatting">HTML Formatting</a>
+  <a href="quotations">HTML Quotations</a>
+  <a href="comments">HTML Comments</a>
+  <a href="colors">HTML Colors</a>
+  <a href="css">HTML Css</a>
+  <a href="links">HTML Links</a>
+  <a href="images">HTML Images</a>
+  <a href="tables">HTML Tables</a>
+  <a href="lists">HTML Lists</a>
+  <a href="blocks">HTML Blocks</a>
+  <a href="classes">HTML Classes</a>
+  <a href="id">HTML ID</a>
+  <a href="charset">HTML Charset</a>
+  <a href="forms">HTML Forms</a>
+  <a href="formelements">HTML Form Elements</a>
+  <a href="inputtypes">HTML Input Types</a>
+  <a href="inputattributes">HTML Input Attributes</a> 
+  </div>
+</div>
+
+<a style="font-size:25px;cursor:pointer;padding: 20px 24px;" onclick="openNav()">HTML</a>
+
+
+  <a href="/css/learncss">CSS</a>
+  <a href="/javascript/learnjavascript">JAVASCRIPT</a>
+  <a href="/php/learnphp">PHP</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;
+    <i class="fa fa-bars"></i>
+  </a>
+</div>    
+
+
+
+
+<div style="padding:15px 15px;font-size:25px">
+<marquee style="text-align:right;color:red;">Click on HTML to See the Content of the Tutorial.</marquee>
+
+<a id="link" href="colors" alt="Previous" title="Previous">Previous</a>
+
+<article style="background-color:#f1f1f1;padding-left:16px;font-size:20px">
+
+<hr>
+<div style="position:relative;height:220px;margin-top:50px;">
+  <div style="opacity:0.5;position:absolute;left:50px;top:-30px;width:100px;height:150px;background-color:#40B3DF"></div>
+  <div style="opacity:0.3;position:absolute;left:120px;top:20px;width:100px;height:170px;"></div>
+  <div style="margin-top:30px;width:200px;height:130px;padding:20px;border-radius:10px;border:10px solid #EE872A;font-size:120%;">
+ <h1>CSS = Styles and Colors</h1>
+ <div style="letter-spacing:12px;font-size:15px;position:relative;left:25px;top:10px;">Manipulate Text</div>
+ <div style="color:#40B3DF;letter-spacing:12px;font-size:15px;position:relative;left:25px;top:20px;">Colors,
+ <span style="background-color:#B4009E;color:#ffffff;">&nbsp;Boxes</span></div>
+ </div>
+</div>
+<br>
+<hr>
+
+<h2>Styling HTML with CSS</h2>
+<p><b>CSS</b> stands for <b>C</b>ascading <b>S</b>tyle <b>S</b>heets.</p>
+<p>CSS describes <strong>how HTML elements are to be displayed on screen,  
+  paper, or in other media</strong>.</p>
+<p>CSS <strong>saves a lot of work</strong>. It can control the layout of 
+  multiple web pages all at once.</p>
+<p>CSS can be added to HTML elements in 3 ways:</p>
+<ul>
+  <li><strong>Inline</strong> - by using the style attribute in HTML elements</li>
+  <li><strong>Internal</strong> - by using a <code class="code">&lt;style&gt;</code> element in the <code class="code">&lt;head&gt;</code> section</li>
+  <li><strong>External</strong> - by using an external CSS file</li>
+</ul>
+<p>The most common way to add CSS, is to keep the styles in separate CSS 
+files. However, here we will use inline and internal styling, because this is easier to 
+demonstrate, and easier for you to try it yourself. </p>
+
+
+<p><strong>Tip:</strong> You can learn much more about CSS in our <a href="/css/learncss"  style="text-decoration:none;color:red;">CSS Tutorial</a>.</p>
+<hr>
+<h2>Inline CSS</h2>
+<p>An inline CSS is used to apply a unique style to a single HTML element.</p>
+<p>An inline CSS uses the style attribute of an HTML element.</p>
+<p>This example sets the text color of the <code class="code">&lt;h1&gt;</code> element to blue:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+ &lt;h1 style=&quot;color:blue;&quot;&gt;This is a Blue Heading&lt;/h1&gt;
+</code>
+</div>
+
+<hr>
+<h2>Internal CSS</h2>
+<p>An internal CSS is used to define a style for a single HTML page.</p>
+<p>An internal CSS is defined in the <code class="code">&lt;head&gt;</code> section of an HTML page, 
+within a <code class="code">&lt;style&gt;</code> element:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&lt;style&gt;<br>
+ body {background-color: powderblue;}<br>h1&nbsp;&nbsp; {color: blue;}<br>p&nbsp;&nbsp;&nbsp; {color: red;}<br>
+&lt;/style&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;This is a 
+ heading&lt;/h1&gt;<br>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;</code>
+</div>
+<hr>
+
+<h2>External CSS</h2>
+<p>An external style sheet is used to define the style for many HTML pages.</p>
+<p><strong>With an external style sheet, you can change the look of an 
+entire web site, by changing one file!</strong></p>
+<p>To use an external style sheet, add a link to it in the <code class="code">&lt;head&gt;</code> section of 
+the HTML page:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>
+&nbsp; &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;<br>
+&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;This is a heading&lt;/h1&gt;<br>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;</code>
+</div>
+<p>An external style sheet can be written in any text editor. The file must not contain any 
+HTML code, and must be saved with a .css extension.</p>
+<p>Here is how the <code class="code">&quot;styles.css&quot;</code> looks:</p>
+<div style="border:solid;">
+<code class="code">
+ body {<br>&nbsp;&nbsp;&nbsp; background-color: powderblue;<br>}<br>h1 {<br>&nbsp;&nbsp;&nbsp; color: blue;<br>}<br>p {<br>&nbsp;&nbsp;&nbsp; color: red;<br>}</code>
+</div> 
+<hr>
+
+<h2>CSS Fonts</h2>
+<p>The CSS <code class="code">color</code> property defines the text color to be used.</p>
+<p>The CSS <code class="code">font-family</code> property defines the font to be used.</p>
+<p>The CSS <code class="code">font-size </code> property defines the text size to be used.</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+&lt;!DOCTYPE html&gt;<br>
+ &lt;html&gt;<br>&lt;head&gt;<br>&lt;style&gt;<br>h1 {<br>&nbsp;&nbsp;&nbsp; color: blue;<br>&nbsp;&nbsp;&nbsp; 
+ font-family: verdana;<br>&nbsp;&nbsp;&nbsp; font-size: 300%;<br>}<br>p&nbsp; {<br>&nbsp;&nbsp;&nbsp; color: red;<br>&nbsp;&nbsp;&nbsp; 
+ font-family: courier;<br>&nbsp;&nbsp;&nbsp; font-size: 160%;<br>}<br>&lt;/style&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br><br>
+ &lt;h1&gt;This is a heading&lt;/h1&gt;<br>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;</code>
+</div>
+<hr>
+
+
+<h2>CSS Border</h2>
+<p>The CSS <code class="code">border</code> property defines a border around an HTML element:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+ p {<br>&nbsp;&nbsp;&nbsp; border: 1px 
+solid powderblue;<br>}<br>
+</code>
+</div>
+<hr>
+
+
+<h2>CSS Padding</h2>
+<p>The CSS <code class="code">padding</code> property defines a padding (space) between 
+the text and the border:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+ p {<br>&nbsp;&nbsp;&nbsp; border: 1px 
+solid powderblue;<br>&nbsp;&nbsp;&nbsp; padding: 30px;<br>}</code>
+</div>
+<hr>
+
+
+<h2>CSS Margin</h2>
+<p>The CSS <code class="code">margin</code> property defines a margin (space) outside the border:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+ p {<br>&nbsp;&nbsp;&nbsp; border: 1px 
+solid powderblue;<br>&nbsp;&nbsp;&nbsp; margin: 50px;<br>
+ }</code>
+</div>
+<hr>
+
+
+<h2>The id Attribute</h2>
+<p>To define a specific style for one special element, add an <code class="code">id</code> attribute to the element:</p>
+<code class="code">
+&lt;p id=&quot;p01&quot;&gt;I am different&lt;/p&gt;
+</code>
+<p>then define a style for the element with the specific id:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+ #p01 {<br>&nbsp;&nbsp;&nbsp; color: blue;<br>}</code>
+ </div>
+
+
+<p><strong>Note:</strong> The id of an element should be unique within a page, so the id selector is used to select one unique element!</p>
+
+
+<hr>
+
+<h2>The class Attribute</h2>
+<p>To define a style for special types of elements, add a <code class="code">class</code> attribute to the element:</p>
+
+<code class="code">
+&lt;p class=&quot;error&quot;&gt;I am different&lt;/p&gt;
+</code>
+<p>then define a style for the elements with the specific 
+class:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+p.error {<br>&nbsp;&nbsp;&nbsp; color: red;<br>}</code>
+</div>
+<hr>
+
+<h2>External References</h2>
+<p>External style sheets can be referenced with a full URL or with a path relative to the current web page.</p>
+<p>This example uses a full URL to link to a style sheet:</p>
+
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+&lt;link rel=&quot;stylesheet&quot; href=<br>&quot;abc.com/html/styles.css&quot;&gt;
+</code>
+</div>
+
+
+<p>This example links to a style sheet located in the html folder on the current web site:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/html/styles.css&quot;&gt;
+</code>
+</div>
+
+<p>This example links to a style sheet located in the same folder as the current page:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;</code>
+</div>
+
+
+
+<hr>
+
+<h2>Chapter Summary</h2>
+<ul>
+  <li>Use the HTML <code class="code">style</code> attribute for inline styling</li>
+  <li>Use the HTML <code class="code">&lt;style&gt;</code> element to define internal CSS</li>
+  <li>Use the HTML <code class="code">&lt;link&gt;</code> element to refer to an external CSS file</li>
+  <li>Use the HTML <code class="code">&lt;head&gt;</code> element to store <code class="code">&lt;style&gt;</code> and <code class="code">&lt;link&gt;</code> elements</li>
+  <li>Use the CSS <code class="code">color</code> property for text colors</li>
+  <li>Use the CSS <code class="code">font-family</code> property for text fonts</li>
+  <li>Use the CSS <code class="code">font-size</code> property for text sizes</li>
+  <li>Use the CSS <code class="code">border</code> property for borders</li>
+    <li>Use the CSS <code class="code">padding</code> property for space inside the border</li>
+    <li>Use the CSS <code class="code">margin</code> property for space outside the border</li>
+</ul>
+<hr>
+
+
+
+
+
+
+
+</article>
+
+<a id="link" href="links" alt="Next" title="Next">Next</a>
+</div>
+
+<div class="footer">
+  <p><b>Designed</b> & <b>Developed</b> By<a href="http://instagram.com/itsmemanishtiwari">Manish Tiwari</a>.</p>
+<p><strong>DISCLAIMER:</strong> All website's content are constantly reviewed to avoid any kind of errors, but we cannot warrant full correctness of all content. 
+While using this site, you agree to have read and accepted our terms of use and privacy policy. <br>All Rights Reserved.&copy;</p>
+<strong>Follow us on</strong> <a href="http://fb.com/mycscode">Facebook</a>
+			 			 <a href="http://instagram.com/mycscode">Instagram</a>
+						 <a href="http://twitter.com/mycscode">Twitter</a>
+<br>
+<a href="termsofuse">Terms of Use</a>
+<a href="privacy">Privacy Policy</a>
+</div>
+
+
+
+
+</body>
+</html>

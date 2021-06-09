@@ -1,0 +1,602 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" 
+      type="/image/png" 
+      href="/html/home/logo.png">
+<title>MYCSCODE |Learn Free Web Tutorial</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="Description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, and PHP.">
+<meta name="Keywords" content="HTML,CSS,JavaScript,PHP,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips,mycscode,my,cs,code,BASIC TO ADVANCED,EASY TO LEARN,LEARN FREE WEB,ADVANCED START,TUTORIAL LEARN,islands,coding,Learn web Designing,learn web devlopment,">
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9227713632689850",
+    enable_page_level_ads: true
+  });
+</script>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+<style>
+.header {
+	background-color: dodgerblue;
+	color: white;
+	padding: 10px;
+	font-family: courier;
+	text-align: center;
+	}
+
+.topnav {
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 24px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.topnav a:hover {
+  background-color: dodgerblue;
+  color: black;
+}
+
+.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+a{
+    display: inline;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding:10px;
+    line-height: 25px;
+
+}
+a:hover{
+	background-color: dodgerblue;
+	color: black;
+}
+a:active {
+  background-color: grey;
+  color: black;
+		
+}
+
+#link {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding:10px;
+    font-size:20px;
+    line-height: 25px;
+    border-radius: 4px;
+    background-color:red;
+}
+
+
+#link:hover {
+    background-color:dodgerblue;
+    color: black;
+
+}
+
+#link:active{
+	background-color: #f1f1f1;
+	color: black;
+}
+	
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    background-color: dodgerblue;
+    color:black;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 40px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.code{
+    color: dodgerblue;
+}
+
+	
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    color: black;
+    text-align: center;
+    font-family:Verdana,sans-serif;
+    font-size:15px;
+
+}
+</style>
+</head>
+
+<body>
+<div class="header">
+  <h1>MYCSCODE</h1>
+<p style="text-align:right;font-size:25px;">Learn Free Web Tutorials.</p>
+</div>
+<div class="topnav" id="myTopnav">
+  <a href="/" class="active">Home</a>
+  <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+      <h1 style="text-align:center;color:white;">HTML Content</h1>
+  <a href="introduction">HTML Introduction</a>
+  <a href="editors">HTML Editors</a>
+  <a href="basic">HTML Basic</a>
+  <a href="elements">HTML Elements</a>
+  <a href="attributes">HTML Attributes</a>
+  <a href="headings">HTML Headings</a>
+  <a href="paragraphs">HTML Paragraphs</a>
+  <a href="styles">HTML Styles</a>
+  <a href="formatting">HTML Formatting</a>
+  <a href="quotations">HTML Quotations</a>
+  <a href="comments">HTML Comments</a>
+  <a href="colors">HTML Colors</a>
+  <a href="css">HTML Css</a>
+  <a href="links">HTML Links</a>
+  <a href="images">HTML Images</a>
+  <a href="tables">HTML Tables</a>
+  <a href="lists">HTML Lists</a>
+  <a href="blocks">HTML Blocks</a>
+  <a href="classes">HTML Classes</a>
+  <a href="id">HTML ID</a>
+  <a href="charset">HTML Charset</a>
+  <a href="forms">HTML Forms</a>
+  <a href="formelements">HTML Form Elements</a>
+  <a href="inputtypes">HTML Input Types</a>
+  <a href="inputattributes">HTML Input Attributes</a> 
+  </div>
+</div>
+
+<a style="font-size:25px;cursor:pointer;padding: 20px 24px;" onclick="openNav()">HTML</a>
+
+
+  <a href="/css/learncss">CSS</a>
+  <a href="/javascript/learnjavascript">JAVASCRIPT</a>
+  <a href="/php/learnphp">PHP</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;
+    <i class="fa fa-bars"></i>
+  </a>
+</div>    
+
+
+
+
+
+<div style="padding:15px 15px;font-size:25px">
+<marquee style="text-align:right;color:red;">Click on HTML to See the Content of the Tutorial.</marquee>
+
+<a id="link" href="links" alt="Previous" title="Previous">Previous</a>
+
+<article style="background-color:#f1f1f1;padding-left:16px;font-size:20px">
+
+<h1>HTML <span class="color_h1">Images</span></h1>
+<hr>
+<p>Images can improve the design and the appearance of a web page.</p>
+<hr>
+
+<div style="border:1px;">
+ <div class="bgimg-1">
+</div>
+<div class="bgimg-2">
+</div>
+<div class="bgimg-3">
+</div>
+</div>
+
+
+<hr>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+ &lt;img src=&quot;nature.jpg&quot; 
+alt=&quot;Nature Love&quot;&gt;<br>
+</code>
+</div>
+<hr>
+
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+ &lt;img src=&quot;nature1.jpg&quot; 
+alt=&quot;Beautiful Nature&quot;&gt;</code>
+</div>
+<hr>
+
+
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+ &lt;img src=&quot;nature2.jpg&quot; 
+alt=&quot;Nature&quot;&gt;
+</code>
+</div>
+<hr>
+
+<h2>HTML Images Syntax</h2>
+<p>In HTML, images are defined with the <code class="code">&lt;img&gt;</code> tag.</p>
+<p>The <code class="code">&lt;img&gt;</code> tag&nbsp;is empty, it contains attributes only, and does not 
+have a closing tag.</p>
+<p>The <code class="code">src</code> attribute specifies the URL 
+(web address) of the image:</p>
+<div style="border:solid;">
+<code class="code">
+&lt;img src=&quot;<i>url</i>&quot;&gt;
+</code></div>
+<hr>
+
+<h2>The alt Attribute</h2>
+<p>The <code class="code">alt</code> attribute provides an alternate text for an image, if the user for 
+some reason cannot view it (because of slow connection, an error in the src 
+attribute, or if the user uses a screen reader).</p>
+<p>The value of the <code class="code">alt</code> attribute should describe the image:</p>
+<div style="border:solid;">
+  <h3>Example</h3>
+<code class="code">
+&lt;img src=&quot;nature.jpg&quot; alt=&quot;Nature Love&quot;&gt;</code>
+</div>
+
+<p>If a browser cannot find an image, it will display the value of the <code class="code">alt</code>attribute:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+&lt;img src=&quot;wrongname.gif&quot; alt=&quot;Nature Love&quot;&gt;</code>
+</div>
+<p><strong>Note:</strong> The <code class="code">alt</code> attribute is required. A web page will not validate correctly without it.</p>
+<hr>
+
+<h2>Image Size - Width and Height</h2>
+<p>You can use the <code class="code">style</code> attribute to specify the width and 
+height of an image.</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+&lt;img src=&quot;nature.jpg&quot; alt=&quot;Nature Love&quot;<br> style=&quot;width:500px;<br>height:600px;&quot;&gt;
+</code>
+</div>
+
+<p>Alternatively, you can use the <code class="code">width</code> and <code class="code">height</code> attributes:</p>
+
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+&lt;img src=&quot;nature.jpg&quot; alt=&quot;Nature Love&quot; width=&quot;500&quot; height=&quot;600&quot;&gt;
+</code>
+</div>
+<hr>
+
+<p>The <code class="code">width</code> and <code class="code">height</code> attributes always defines the width and height of the 
+image in pixels.</p>
+
+<p><strong>Note:</strong> Always specify the width and height of an image. If width and height are not specified, the page 
+  might flicker while the image loads.</p>
+<hr>
+
+<h2>Width and Height, or Style?</h2>
+<p>The <code class="code">width</code>, <code class="code">height</code>, and <code class="code">style</code> attributes are valid in HTML5.</p>
+<p>However, we suggest using the <code class="code">style</code> attribute. It prevents styles sheets from changing 
+the size of images:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+ &lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&lt;style&gt;<br>img { <br>&nbsp;&nbsp;&nbsp; width: 100%; <br>}<br>
+ &lt;/style&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;img src=&quot;html5.gif&quot; alt=&quot;HTML5 Icon&quot; width=&quot;128&quot; height=&quot;128&quot;&gt;<br>&lt;img src=&quot;html5.gif&quot; alt=&quot;HTML5 Icon&quot;<br> style=&quot;width:128px;<br>height:128px;&quot;&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;
+</code>
+</div>
+<hr>
+
+<h2>Images in Another Folder</h2>
+<p>If not specified, the browser expects to find the image in the same folder as the web page.</p>
+<p>However, it is common to store images in a sub-folder. You must then include the folder 
+name in the <code class="code">src</code> attribute:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+&lt;img src=&quot;/images/html5.gif&quot; 
+alt=&quot;HTML5 Icon&quot; style=&quot;width:128px;<br>height:128px;&quot;&gt;</code>
+</div>
+<hr>
+
+
+<h2>Images on Another Server</h2>
+<p>Some web sites store their images on image servers.</p>
+<p>Actually, you can access images from any web address in the world:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+&lt;img src=&quot;abc.com/images/snap.jpg&quot; alt=&quot;snap&quot;&gt;
+</code>
+</div>
+<hr>
+
+<h2>Animated Images</h2>
+<p>HTML allows animated GIFs:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+&lt;img src=&quot;programming.gif&quot; alt=&quot;Computer Man&quot; style=&quot;width:48px;<br>height:48px;&quot;&gt;</code>
+</div>
+<hr>
+
+
+<h2>Image as a Link</h2>
+<p>To use an image as a link, put the <code class="code">&lt;img&gt;</code> tag inside the <code class="code">&lt;a&gt;</code> 
+tag:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+&lt;a href=&quot;index&quot;&gt;<br>&nbsp; &lt;img src=&quot;smiley.gif&quot; alt=&quot;HTML tutorial&quot; 
+style=&quot;width:42px;<br>&nbsp;&nbsp;&nbsp;height:42px;<br>&nbsp;&nbsp;&nbsp;border:0;&quot;&gt;<br>&lt;/a&gt;</code>
+</div>
+
+<p><strong>Note:</strong> <code class="code">border:0;</code> is added to prevent IE9 (and earlier) from displaying a border around the image 
+(when the image is a link).</p>
+<hr>
+
+
+<h2>Image Floating</h2>
+<p>Use the CSS <code class="code">float</code> property to let the image float to the right or to the left of a text:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+&lt;p&gt;&lt;img src=&quot;smiley.gif&quot; alt=&quot;Smiley face&quot;
+style=&quot;float:right;width:42px;<br>
+&nbsp;&nbsp;&nbsp;height:42px;&quot;&gt;<br>
+ The image will float to the right of 
+the text.&lt;/p&gt;<br><br>&lt;p&gt;&lt;img src=&quot;smiley.gif&quot; alt=&quot;Smiley face&quot;
+style=&quot;float:left;width:42px;<br>
+&nbsp;&nbsp;&nbsp;height:42px;&quot;&gt;<br>
+ The image will float to the left of 
+the text.&lt;/p&gt;</code>
+</div>
+<hr>
+
+
+<h2>Image Maps</h2>
+<p>The <code class="code">&lt;map&gt;</code> tag defines an image-map. An image-map is an image with 
+clickable areas.</p>
+<p>In the image below, click on the computer, the phone, or the cup of coffee:</p>
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Sun" href="#">
+  <area shape="rect" coords="290,172,333,250" alt="Mercury" href="#">
+  <area shape="circle" coords="337,300,44" alt="Venus" href="#">
+</map>
+
+
+<div style="border:solid;">
+  <h3>Example</h3>
+<code class="code">
+&lt;img src=&quot;workplace.jpg&quot; alt=&quot;Workplace&quot; usemap=&quot;#workmap&quot;&gt;<br>
+<br>&lt;map name=&quot;workmap&quot;&gt;<br>&nbsp; &lt;area shape=&quot;rect&quot; coords=&quot;34,44,270,350&quot; 
+  alt=&quot;Computer&quot; href=&quot;#&quot;&gt;<br>&nbsp; &lt;area shape=&quot;rect&quot; coords=&quot;290,172,333,250&quot; 
+  alt=&quot;Phone&quot; href=&quot;#&quot;&gt;<br>&nbsp; &lt;area shape=&quot;circle&quot; coords=&quot;337,300,44&quot; 
+  alt=&quot;Coffee&quot; href=&quot;#&quot;&gt;<br>&lt;/map&gt;</code>
+</div>
+
+
+
+<p>The <code class="code">name</code> attribute of the <code class="code">&lt;map&gt;</code> tag is associated with the <code class="code">&lt;img&gt;</code>'s usemap 
+attribute and creates a relationship between the image and the map.</p>
+<p>The <code class="code">&lt;map&gt;</code> element contains a number of <code class="code">&lt;area&gt;</code> tags, that define the clickable 
+areas in the image-map.</p>
+<hr>
+
+<h2>Background Image</h2>
+<p>To add a background image on an HTML element, use the CSS property
+<code class="code">background-image</code>:</p>
+
+<h3>Example</h3>
+  <p>To add a background image on a web page, specify the background-image 
+  property on the BODY 
+  element:</p>
+  <div style="border:solid;">
+<code class="code">
+  &lt;body style=&quot;background-image:url('clouds.jpg')&quot;&gt;<br><br>&lt;h2&gt;Background 
+  Image&lt;/h2&gt;<br><br>&lt;/body&gt;</code>
+</div>
+
+<h3>Example</h3>
+  <p>To add a background image on a paragraph, specify the background-image 
+  property on the P 
+  element:</p>
+  <div style="border:solid;">
+<code class="code">
+  &lt;body&gt;<br><br>&lt;p style=&quot;background-image:url('clouds.jpg')&quot;&gt;<br>...<br>&lt;/p&gt;<br><br>&lt;/body&gt;</code>
+  </div>
+
+
+<h2>The <code class="code">&lt;picture&gt;</code> Element</h2>
+<p>HTML5 introduced the <code class="code">&lt;picture&gt;</code> element to add more flexibility when 
+specifying image resources.</p>
+<p>The <code class="code">&lt;picture&gt;</code> element contains a number of <code class="code">&lt;source&gt;</code> elements, each referring 
+to different image sources. This way the browser can choose the image that best 
+fits the current view and/or device.</p>
+<p>Each <code class="code">&lt;source&gt;</code> element have attributes describing when their image is the 
+most suitable.</p>
+<p>The browser will use the first <code class="code">&lt;source&gt;</code> element with matching attribute 
+values, and ignore any following <code class="code">&lt;source&gt;</code> elements.</p>
+<h3>Example</h3>
+  <p>Show one picture if the browser window (viewport) is a minimum of 650 
+  pixels, and another image if not, but larger than 465 pixels.</p>
+<div style="border:solid;">
+  <code class="code">&lt;picture&gt;<br>&nbsp; &lt;source media="(min-width: 650px)" srcset="img_pink_flowers.jpg"&gt;<br>
+  &nbsp;
+  &lt;source media="(min-width: 465px)" srcset="img_white_flower.jpg"&gt;<br>&nbsp; &lt;img src="img_orange_flowers.jpg" 
+  alt="Flowers" style="width:auto;"&gt;<br>&lt;/picture&gt;</code>
+  </div>
+
+
+
+<p><strong>Note:</strong> Always specify an <code class="code">&lt;img&gt;</code> element as the last child 
+element of the <code class="code">&lt;picture&gt;</code> element. The <code class="code">&lt;img&gt;</code> element is used by browsers that 
+do 
+not support the <code class="code">&lt;picture&gt;</code> element, or if none of the <code class="code">&lt;source&gt;</code> tags matched.</p>
+
+
+<hr>
+<h2>HTML Screen Readers</h2>
+<p>A screen reader is a software program that reads the HTML code, converts the 
+text, and allows the user to <code class="code">&quot;listen&quot;</code> to the content. Screen readers are useful 
+for people who are blind, visually impaired, or learning disabled.</p>
+<hr>
+
+<h2>Chapter Summary</h2>
+<ul>
+  <li>Use the HTML <code class="code">&lt;img&gt;</code> element to define an image</li>
+  <li>Use the HTML <code class="code">src</code> attribute to define the URL of the image</li>
+  <li>Use the HTML <code class="code">alt</code> attribute to define an alternate text for an image, if it cannot be displayed</li>
+  <li>Use the HTML <code class="code">width</code> and <code class="code">height</code> attributes to define the size of the image</li>
+  <li>Use the CSS <code class="code">width</code> and <code class="code">height</code> properties to define the size of the image (alternatively)</li>
+  <li>Use the CSS <code class="code">float</code> property to let the image float</li>
+  <li>Use the HTML <code class="code">&lt;map&gt;</code> element to define an image-map</li>
+  <li>Use the HTML <code class="code">&lt;area&gt;</code> element to define the clickable areas in the image-map</li>
+  <li>Use the HTML <code class="code">&lt;img&gt;</code>'s element <code class="code">usemap</code> attribute to point to an image-map</li>
+  <li>Use the HTML <code class="code">&lt;picture&gt;</code> element to show different images for different devices</li>
+</ul>
+<hr>
+
+
+<p><strong>Note:</strong> Loading images takes time. Large images can slow down your page. Use images carefully.</p>
+<hr>
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</article>
+
+<a id="link" href="tables" alt="Next" title="Next">Next</a>
+</div>
+
+<div class="footer">
+  <p><b>Designed</b> & <b>Developed</b> By<a href="http://instagram.com/itsmemanishtiwari">Manish Tiwari</a>.</p>
+<p><strong>DISCLAIMER:</strong> All website's content are constantly reviewed to avoid any kind of errors, but we cannot warrant full correctness of all content. 
+While using this site, you agree to have read and accepted our terms of use and privacy policy. <br>All Rights Reserved.&copy;</p>
+<strong>Follow us on</strong> <a href="http://fb.com/mycscode">Facebook</a>
+			 			 <a href="http://instagram.com/mycscode">Instagram</a>
+						 <a href="http://twitter.com/mycscode">Twitter</a>
+<br>
+<a href="termsofuse">Terms of Use</a>
+<a href="privacy">Privacy Policy</a>
+</div>
+
+
+</body>
+</html>

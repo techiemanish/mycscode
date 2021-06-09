@@ -1,0 +1,372 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" 
+      type="/image/png" 
+      href="/html/home/logo.png">
+<title>MYCSCODE |Learn Free Web Tutorial</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="Description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, and PHP.">
+<meta name="Keywords" content="HTML,CSS,JavaScript,PHP,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips,mycscode,my,cs,code,BASIC TO ADVANCED,EASY TO LEARN,LEARN FREE WEB,ADVANCED START,TUTORIAL LEARN,islands,coding,Learn web Designing,learn web devlopment,">
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9227713632689850",
+    enable_page_level_ads: true
+  });
+</script>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+<style>
+.header {
+	background-color: dodgerblue;
+	color: white;
+	padding: 10px;
+	font-family: courier;
+	text-align: center;
+	}
+
+.topnav {
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 24px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.topnav a:hover {
+  background-color: dodgerblue;
+  color: black;
+}
+
+.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+a{
+    display: inline;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding:10px;
+    line-height: 25px;
+
+}
+a:hover{
+	background-color: dodgerblue;
+	color: black;
+}
+a:active {
+  background-color: grey;
+  color: black;
+		
+}
+
+#link {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding:10px;
+    font-size:20px;
+    line-height: 25px;
+    border-radius: 4px;
+    background-color:red;
+}
+
+
+#link:hover {
+    background-color:dodgerblue;
+    color: black;
+
+}
+
+#link:active{
+	background-color: #f1f1f1;
+	color: black;
+}
+	
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    background-color: dodgerblue;
+    color:black;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 40px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.code{
+    color: dodgerblue;
+}
+
+	
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    color: black;
+    text-align: center;
+    font-family:Verdana,sans-serif;
+    font-size:15px;
+
+}
+</style>
+</head>
+
+<body>
+<div class="header">
+  <h1>MYCSCODE</h1>
+<p style="text-align:right;font-size:25px;">Learn Free Web Tutorials.</p>
+</div>
+<div class="topnav" id="myTopnav">
+  <a href="/" class="active">Home</a>
+  <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+      <h1 style="text-align:center;color:white;">HTML Content</h1>
+  <a href="introduction">HTML Introduction</a>
+  <a href="editors">HTML Editors</a>
+  <a href="basic">HTML Basic</a>
+  <a href="elements">HTML Elements</a>
+  <a href="attributes">HTML Attributes</a>
+  <a href="headings">HTML Headings</a>
+  <a href="paragraphs">HTML Paragraphs</a>
+  <a href="styles">HTML Styles</a>
+  <a href="formatting">HTML Formatting</a>
+  <a href="quotations">HTML Quotations</a>
+  <a href="comments">HTML Comments</a>
+  <a href="colors">HTML Colors</a>
+  <a href="css">HTML Css</a>
+  <a href="links">HTML Links</a>
+  <a href="images">HTML Images</a>
+  <a href="tables">HTML Tables</a>
+  <a href="lists">HTML Lists</a>
+  <a href="blocks">HTML Blocks</a>
+  <a href="classes">HTML Classes</a>
+  <a href="id">HTML ID</a>
+  <a href="charset">HTML Charset</a>
+  <a href="forms">HTML Forms</a>
+  <a href="formelements">HTML Form Elements</a>
+  <a href="inputtypes">HTML Input Types</a>
+  <a href="inputattributes">HTML Input Attributes</a> 
+  </div>
+</div>
+
+<a style="font-size:25px;cursor:pointer;padding: 20px 24px;" onclick="openNav()">HTML</a>
+
+
+  <a href="/css/learncss">CSS</a>
+  <a href="/javascript/learnjavascript">JAVASCRIPT</a>
+  <a href="/php/learnphp">PHP</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;
+    <i class="fa fa-bars"></i>
+  </a>
+</div>    
+
+
+
+<div style="padding:15px 15px;font-size:25px">
+<marquee style="text-align:right;color:red;">Click on HTML to See the Content of the Tutorial.</marquee>
+
+<a id="link" href="learnhtml" alt="Previous" title="Previous">Previous</a>
+
+<article style="background-color:#f1f1f1;padding-left:16px;font-size:20px;">
+<h2>What is HTML?</h2>
+<p>HTML is the standard markup language for creating Web pages.</p>
+<ul>
+<li>HTML stands for Hyper Text Markup Language</li>
+<li>HTML describes the structure of Web pages using markup</li>
+<li>HTML elements are the building blocks of HTML pages</li>
+<li>HTML elements are represented by tags</li>
+<li>HTML tags label pieces of content such as "heading", "paragraph", "table", and so on</li>
+<li>Browsers do not display the HTML tags, but use them to render the content of the page</li>
+</ul>
+
+<h2>A Simple HTML Document</h2>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+<p>&lt;!DOCTYPE html&gt;</p>
+<p>&lt;html&gt;</p>
+<p>&lt;head&gt;</p>
+<p>&lt;title&gt;Page Title&lt;/title&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+
+<p>&lt;h1&gt;My First Heading&lt;/h1&gt;</p>
+<p>&lt;p&gt;My first paragraph.&lt;/p&gt;</p>
+
+<p>&lt;/body&gt;</p>
+<p>&lt;/html&gt;</p>
+</code>
+</div>
+<hr>
+<h4>Example Explained</h4>
+<ul>
+<li>The <code class="code">&lt;!DOCTYPE html&gt;</code> declaration defines this document to be HTML5</li>
+<li>The <code class="code">&lt;html&gt;</code> element is the root element of an HTML page</li>
+<li>The <code class="code">&lt;head&gt;</code> element contains meta information about the document</li>
+<li>The <code class="code">&lt;title&gt;</code> element specifies a title for the document</li>
+<li>The <code class="code">&lt;body&gt;</code> element contains the visible page content</li>
+<li>The <code class="code">&lt;h1&gt;</code> element defines a large heading</li>
+<li>The <code class="code">&lt;p&gt;</code> element defines a paragraph</li>
+</ul>
+<hr>
+<h3>HTML Tags</h3>
+<p>HTML tags are element names surrounded by angle brackets:</p>
+<div style="border:solid;">
+<code class="code">&lt;tagname&gt;content goes here...&lt;/tagname&gt;</code>
+</div>
+
+<ul>
+<li>HTML tags normally come in pairs like &lt;p&gt; and &lt;/p&gt;</li>
+<li>The first tag in a pair is the start tag, the second tag is the end tag</li>
+<li>The end tag is written like the start tag, but with a forward slash inserted before the tag name</li>
+</ul>
+<hr>
+
+<b>Tip:</b> <p>The start tag is also called the opening tag, and the end tag the closing tag.</p>
+<hr>
+<h3>Web Browsers</h3>
+<p>The purpose of a web browser (Chrome, IE, Firefox, Safari) is to read HTML documents and display them.<p>
+<hr>
+
+<h3>The <code class="code">&lt;!DOCTYPE&gt;</code> Declaration</h3>
+<ul>
+<li>The <code class="code">&lt;!DOCTYPE&gt;</code> declaration represents the document type, and helps browsers to display web pages correctly.</li>
+<li>It must only appear once, at the top of the page (before any HTML tags).</li>
+<li>The <code class="code">&lt;!DOCTYPE&gt;</code> declaration is not case sensitive.</li>
+<li>The <code class="code">&lt;!DOCTYPE&gt;</code> declaration for HTML5 is:</li>
+&nbsp;&nbsp;&nbsp;<code class="code">&lt;!DOCTYPE html&gt;</code>
+</ul>
+<hr>
+
+
+
+
+
+
+
+</article>
+
+<a id="link" href="editors" alt="Next" title="Next">Next</a>
+
+
+</div>
+
+<div class="footer">
+  <p><b>Designed</b> & <b>Developed</b> By<a href="http://instagram.com/itsmemanishtiwari">Manish Tiwari</a>.</p>
+<p><strong>DISCLAIMER:</strong> All website's content are constantly reviewed to avoid any kind of errors, but we cannot warrant full correctness of all content. 
+While using this site, you agree to have read and accepted our terms of use and privacy policy. <br>All Rights Reserved.&copy;</p>
+<strong>Follow us on</strong> <a href="http://fb.com/mycscode">Facebook</a>
+			 			 <a href="http://instagram.com/mycscode">Instagram</a>
+						 <a href="http://twitter.com/mycscode">Twitter</a>
+<br>
+<a href="termsofuse">Terms of Use</a>
+<a href="privacy">Privacy Policy</a>
+</div>
+
+
+
+</body>
+</html>

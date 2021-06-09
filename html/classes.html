@@ -1,0 +1,440 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" 
+      type="/image/png" 
+      href="/html/home/logo.png">
+<title>MYCSCODE |Learn Free Web Tutorial</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="Description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, and PHP.">
+<meta name="Keywords" content="HTML,CSS,JavaScript,PHP,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips,mycscode,my,cs,code,BASIC TO ADVANCED,EASY TO LEARN,LEARN FREE WEB,ADVANCED START,TUTORIAL LEARN,islands,coding,Learn web Designing,learn web devlopment,">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9227713632689850",
+    enable_page_level_ads: true
+  });
+</script>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+<style>
+.header {
+	background-color: dodgerblue;
+	color: white;
+	padding: 10px;
+	font-family: courier;
+	text-align: center;
+	}
+
+.topnav {
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 24px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.topnav a:hover {
+  background-color: dodgerblue;
+  color: black;
+}
+
+.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+a{
+    display: inline;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding:10px;
+    line-height: 25px;
+
+}
+a:hover{
+	background-color: dodgerblue;
+	color: black;
+}
+a:active {
+  background-color: grey;
+  color: black;
+		
+}
+
+#link {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding:10px;
+    font-size:20px;
+    line-height: 25px;
+    border-radius: 4px;
+    background-color:red;
+}
+
+
+#link:hover {
+    background-color:dodgerblue;
+    color: black;
+
+}
+
+#link:active{
+	background-color: #f1f1f1;
+	color: black;
+}
+	
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    background-color: dodgerblue;
+    color:black;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 40px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.code{
+    color: dodgerblue;
+}
+
+	
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    color: black;
+    text-align: center;
+    font-family:Verdana,sans-serif;
+    font-size:15px;
+
+}
+</style>
+</head>
+
+<body>
+<div class="header">
+  <h1>MYCSCODE</h1>
+<p style="text-align:right;font-size:25px;">Learn Free Web Tutorials.</p>
+</div>
+<div class="topnav" id="myTopnav">
+  <a href="/" class="active">Home</a>
+  <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+      <h1 style="text-align:center;color:white;">HTML Content</h1>
+  <a href="introduction">HTML Introduction</a>
+  <a href="editors">HTML Editors</a>
+  <a href="basic">HTML Basic</a>
+  <a href="elements">HTML Elements</a>
+  <a href="attributes">HTML Attributes</a>
+  <a href="headings">HTML Headings</a>
+  <a href="paragraphs">HTML Paragraphs</a>
+  <a href="styles">HTML Styles</a>
+  <a href="formatting">HTML Formatting</a>
+  <a href="quotations">HTML Quotations</a>
+  <a href="comments">HTML Comments</a>
+  <a href="colors">HTML Colors</a>
+  <a href="css">HTML Css</a>
+  <a href="links">HTML Links</a>
+  <a href="images">HTML Images</a>
+  <a href="tables">HTML Tables</a>
+  <a href="lists">HTML Lists</a>
+  <a href="blocks">HTML Blocks</a>
+  <a href="classes">HTML Classes</a>
+  <a href="id">HTML ID</a>
+  <a href="charset">HTML Charset</a>
+  <a href="forms">HTML Forms</a>
+  <a href="formelements">HTML Form Elements</a>
+  <a href="inputtypes">HTML Input Types</a>
+  <a href="inputattributes">HTML Input Attributes</a> 
+  </div>
+</div>
+
+<a style="font-size:25px;cursor:pointer;padding: 20px 24px;" onclick="openNav()">HTML</a>
+
+
+  <a href="/css/learncss">CSS</a>
+  <a href="/javascript/learnjavascript">JAVASCRIPT</a>
+  <a href="/php/learnphp">PHP</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;
+    <i class="fa fa-bars"></i>
+  </a>
+</div>    
+
+
+
+
+<div style="padding:15px 15px;font-size:25px">
+<marquee style="text-align:right;color:red;">Click on HTML to See the Content of the Tutorial.</marquee>
+
+<a id="link" href="blocks" alt="Previous" title="Previous">Previous</a>
+
+<article style="background-color:#f1f1f1;padding-left:16px;font-size:20px">
+
+
+<h1>HTML <span>The class Attribute</span></h1>
+
+<hr>
+
+<h2>Using The class Attribute</h2>
+<p>The HTML <code class="code">class</code> attribute is used to define equal styles for elements with the same class name.</p>
+<p>So, all HTML elements with the same <code class="code">class</code> attribute will have the same format and style.</p>
+<p>Here we have three <code class="code">&lt;div&gt;</code> elements that point to the same class name:</p>
+<hr>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+ &lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&lt;style&gt;<br>
+  .cities {<br>&nbsp;&nbsp;&nbsp; background-color: black;<br>&nbsp;&nbsp;&nbsp; color: white;<br>&nbsp;&nbsp;&nbsp; margin: 20px;<br>&nbsp;&nbsp;&nbsp; padding: 20px;<br>} <br>&lt;/style&gt;<br>
+ &lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;div class="cities"&gt;<br>
+ &nbsp;
+ &lt;h2&gt;London&lt;/h2&gt;<br>&nbsp; &lt;p&gt;London is the capital of England.&lt;/p&gt;<br>
+ &lt;/div&gt;<br><br>&lt;div class="cities"&gt;<br>
+ &nbsp;
+ &lt;h2&gt;Paris&lt;/h2&gt;<br>&nbsp; &lt;p&gt;Paris is the capital of France.&lt;/p&gt;<br>&lt;/div&gt;<br><br>&lt;div class="cities"&gt;<br>
+ &nbsp;
+ &lt;h2&gt;Tokyo&lt;/h2&gt;<br>&nbsp; &lt;p&gt;Tokyo is the capital of Japan.&lt;/p&gt;<br>&lt;/div&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;</code>
+ </div>
+<hr>
+
+
+<p>Result:</p>
+<div style="border:solid;">
+  <div class="cities">
+  <h2>London</h2>
+  <p>London is the capital of England.</p>
+  </div>
+  <div class="cities">
+  <h2>Paris</h2>
+  <p>Paris is the capital of France.</p>
+  </div>
+  <div class="cities">  
+  <h2>Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+  </div>
+</div>
+<hr>
+
+<hr>
+
+<h2>Using The class Attribute on Inline Elements</h2>
+<p>The HTML <code class="code">class</code> attribute can also be used on inline elements:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+ &lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&lt;style&gt;<br>span.note {<br>&nbsp;&nbsp;&nbsp; font-size: 120%;<br>&nbsp;&nbsp;&nbsp; color: red;<br>}<br>
+ &lt;/style&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;My &lt;span class="note"&gt;Important&lt;/span&gt; Heading&lt;/h1&gt;<br>&lt;p&gt;This is some &lt;span class="note"&gt;important&lt;/span&gt; text.&lt;/p&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;
+ </code>
+ </div>
+<hr>
+
+<p><strong>Tip:</strong> The class attribute can be used on <strong>any</strong> HTML element.</p>
+<p><strong>Note:</strong> The class name is case sensitive!</p>
+<hr>
+
+<h2>Select Elements With a Specific Class</h2>
+<p>In CSS, to select elements with a specific class, write a period (.) character, followed by the name of the class:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<p>Use CSS to style all elements with the class name "city":</p>
+<code class="code">
+  &lt;style&gt;<br>
+  <strong>.city</strong> {<br>&nbsp; &nbsp;&nbsp;background-color: tomato;<br>&nbsp;&nbsp;&nbsp; color: white;<br>&nbsp;&nbsp;&nbsp; padding: 
+  10px;<br>} <br>&lt;/style&gt;<br>
+  <br>&lt;h2 
+  <strong>class=&quot;city&quot;</strong>&gt;London&lt;/h2&gt;<br>&lt;p&gt;London is the capital of England.&lt;/p&gt;<br><br>
+  &lt;h2 <strong>class=&quot;city&quot;</strong>&gt;Paris&lt;/h2&gt;<br>&lt;p&gt;Paris is the capital of France.&lt;/p&gt;<br><br>&lt;h2 
+  <strong>class=&quot;city&quot;</strong>&gt;Tokyo&lt;/h2&gt;<br>&lt;p&gt;Tokyo is the capital of Japan.&lt;/p&gt;<br>
+  </code>
+  </div>
+  <hr>
+  
+  <div style="border:solid;">
+  <p>Result:</p>
+  <h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+</div>
+<hr>
+
+<h2>Multiple Classes</h2>
+<p>HTML elements can have more than one class name, each class name must be separated by a space.</p>
+
+<div style="border:solid;">
+<h3>Example</h3>
+<p>Style elements with the class name &quot;city&quot;, also style elements with the 
+class name &quot;main&quot;:</p>
+<code class="code">
+  &lt;h2 
+  class=&quot;city main&quot;&gt;London&lt;/h2&gt;<br>&lt;h2 class=&quot;city&quot;&gt;Paris&lt;/h2&gt;<br>&lt;h2 
+  class=&quot;city&quot;&gt;Tokyo&lt;/h2&gt;<br>
+  </code>
+  </div>
+<hr>
+
+
+<p>In the example above, the first <code class="code">&lt;h2&gt;</code> element belongs to both the "city" class and the "main" class.</p>
+<hr>
+
+<h2>Different Tags Can Share Same Class</h2>
+<p>Different tags, like <code class="code">&lt;h2&gt;</code> and <code class="code">&lt;p&gt;</code>, can have the same class name 
+and thereby share the same style:</p>
+
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+  &lt;h2 class=&quot;city&quot;&gt;Paris&lt;/h2&gt;<br>&lt;p 
+  class=&quot;city&quot;&gt;Paris is the capital of France&lt;/p&gt;<br>
+  </code>
+  </div>
+<hr>
+<h2>Using The class Attribute in JavaScript</h2>
+<p>The class name can also be used by JavaScript to perform certain tasks for elements with the specified class name.</p>
+<p>JavaScript can access elements with a specified class name by using the <code class="code">getElementsByClassName()</code> method:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+  <p>When a user clicks on a button, hide all elements with the class name 
+  <code class="code">&quot;city&quot;</code>:</p>
+<code class="code">
+  &lt;script&gt;<br>function myFunction() {<br>&nbsp; var x = <strong>document.<br>&nbsp;&nbsp;getElementsByClassName<br>&nbsp;&nbsp;(&quot;city&quot;)</strong>;<br>&nbsp; for (var i = 0; i &lt; x.length; 
+  i++) {<br>&nbsp;&nbsp;&nbsp; x[i].style.display = &quot;none&quot;;<br>&nbsp; }<br>}<br>&lt;/script&gt;
+  </code>
+  </div>
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<a id="link" href="id" alt="Next" title="Next">Next</a>
+</div>
+
+<div class="footer">
+  <p><b>Designed</b> & <b>Developed</b> By<a href="http://instagram.com/itsmemanishtiwari">Manish Tiwari</a>.</p>
+<p><strong>DISCLAIMER:</strong> All website's content are constantly reviewed to avoid any kind of errors, but we cannot warrant full correctness of all content. 
+While using this site, you agree to have read and accepted our terms of use and privacy policy. <br>All Rights Reserved.&copy;</p>
+<strong>Follow us on</strong> <a href="http://fb.com/mycscode">Facebook</a>
+			 			 <a href="http://instagram.com/mycscode">Instagram</a>
+						 <a href="http://twitter.com/mycscode">Twitter</a>
+<br>
+<a href="termsofuse">Terms of Use</a>
+<a href="privacy">Privacy Policy</a>
+</div>
+
+
+</body>
+</html>

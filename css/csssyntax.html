@@ -1,0 +1,483 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" 
+      type="image/png" 
+      href="/css/home/logo.png">
+<title>MYCSCODE |Learn Free Web Tutorial</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="Description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, and PHP.">
+<meta name="Keywords" content="HTML,CSS,JavaScript,PHP,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips,mycscode,my,cs,code,BASIC TO ADVANCED,EASY TO LEARN,LEARN FREE WEB,ADVANCED START,TUTORIAL LEARN,islands,coding,Learn web Designing,learn web devlopment,">
+
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9227713632689850",
+    enable_page_level_ads: true
+  });
+</script>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+<style>
+.header {
+	background-color: dodgerblue;
+	color: white;
+	padding: 10px;
+	font-family: courier;
+	text-align: center;
+	}
+
+.topnav {
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 24px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.topnav a:hover {
+  background-color: dodgerblue;
+  color: black;
+}
+
+.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+#link {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding:10px;
+    font-size:20px;
+    line-height: 25px;
+    border-radius: 4px;
+    background-color:red;
+}
+
+
+#link:hover {
+    background-color:dodgerblue;
+    color: black;
+
+}
+
+#link:active{
+	background-color: #f1f1f1;
+	color: black;
+}
+	
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    background-color: dodgerblue;
+    color:black;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 40px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+a{
+    display: inline;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding:10px;
+    line-height: 25px;
+
+}
+a:hover{
+	background-color: dodgerblue;
+	color: black;
+}
+a:active {
+  background-color: grey;
+  color: black;
+		
+}
+
+.code{
+    color: dodgerblue;
+}
+
+
+	
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    color: black;
+    text-align: center;
+    font-family:Verdana,sans-serif;
+    font-size:15px;
+}
+</style>
+</head>
+
+<body>
+<div class="header">
+  <h1>MYCSCODE</h1>
+<p style="text-align:right;font-size:25px;">Learn Free Web Tutorials.</p>
+</div>
+<div class="topnav" id="myTopnav">
+  <a href="/css/home/index" class="active">Home</a>
+  <a href="/html/learnhtml">HTML</a>
+  <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+      <h1 style="text-align:center;color:white;">CSS Content</h1>
+  <a href="cssintroduction">CSS Introduction</a>
+  <a href="csssyntax">CSS Syntax</a>
+  <a href="csscolors">CSS Colors</a>
+  <a href="cssbackground">CSS Background</a>
+  <a href="cssborders">CSS Borders</a>
+  <a href="cssmargins">CSS Margins</a>
+  <a href="csspadding">CSS Padding</a>
+  <a href="csshw">CSS Height/Width</a>
+  <a href="cssboxmodel">CSS Box Model</a>
+  <a href="cssoutline">CSS Outline</a>
+  <a href="csstext">CSS Text</a>
+  <a href="cssfonts">CSS Fonts</a>
+  <a href="cssicons">CSS Icons</a>
+  <a href="csslinks">CSS Links</a>
+  <a href="csslists">CSS Lists</a>
+  <a href="csstables">CSS Tables</a>
+  <a href="cssdisplay">CSS Display</a>
+  <a href="cssmw">CSS Max-width</a>
+  <a href="cssposition">CSS Position</a>
+  <a href="cssoverflow">CSS Overflow</a>
+  <a href="cssfloat">CSS Float</a>
+  <a href="cssib">CSS Inline-block</a>
+  <a href="cssalign">CSS Align</a>
+  <a href="cssopacity">CSS Opacity</a>
+  <a href="cssnavigationbar">CSS Navigation Bar</a> 
+  </div>
+</div>
+
+  <a style="font-size:25px;cursor:pointer;padding: 20px 24px;" onclick="openNav()">CSS</a>
+  <a href="/javascript/learnjavascript">JAVASCRIPT</a>
+  <a href="/php/learnphp">PHP</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;
+    <i class="fa fa-bars"></i>
+  </a>
+</div>    
+
+<div style="padding:15px 15px;font-size:25px">
+<marquee style="text-align:right;color:red;">Click on CSS to See the Content of the Tutorial.</marquee>
+<a id="link" href="cssintroduction.html" alt="Previous" title="Previous">Previous</a>
+
+<article style="background-color:#f1f1f1;padding-left:16px;font-size:20px;">
+<h1>CSS <span>Syntax and Selectors</span></h1>
+<hr>
+<h2>CSS Syntax</h2>
+<p>A CSS rule-set consists of a selector and a declaration block:</p>
+<p><img src="selector.gif" alt="CSS selector" class="image"></p>
+<p>The selector points to the HTML element you want to style.</p>
+<p>The declaration block contains one or more declarations separated by 
+semicolons.</p>
+<p>Each declaration includes a CSS property name and a value, separated by a colon.</p>
+<p>A CSS declaration always ends with a semicolon, and declaration blocks are 
+surrounded by curly braces.</p>
+<p>In the following example all <code class="code">&lt;p&gt;</code> elements will be center-aligned, with a red 
+text color:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+p
+{<br>
+&nbsp;&nbsp;&nbsp;
+color: red;<br>
+&nbsp;&nbsp;&nbsp;
+text-align: center;<br>
+}
+</code>
+</div>
+<hr>
+
+<h2>CSS Selectors</h2>
+<p>CSS selectors are used to <code class="code">&quot;find&quot;</code> (or select) HTML elements based on their 
+element name, id, 
+class, attribute, and more.</p>
+<hr>
+
+<h2>The element Selector</h2>
+<p>The element selector selects elements based on the element name.</p>
+<p>You can select all &lt;p&gt; elements on a page like this (in this case, all &lt;p&gt; elements will be 
+center-aligned, with a red text color):</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+p
+{<br>
+&nbsp;&nbsp;&nbsp;
+text-align: center;<br>
+&nbsp;&nbsp;&nbsp;
+color: red;<br>
+}
+</code>
+</div>
+<hr>
+
+<h2>The id Selector</h2>
+<p>The id selector uses the id attribute of an HTML element to select a specific element.</p>
+<p>The id of an element should be unique within a page, so the id selector is 
+used to 
+select one unique element!</p>
+<p>To select an element with a specific id, write a hash (#) character, followed by 
+the id of the element.</p>
+<p>The style rule below will be applied to the HTML element with id=&quot;para1&quot;:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+#para1
+{<br>
+&nbsp;&nbsp;&nbsp;
+text-align: center;<br>
+&nbsp;&nbsp;&nbsp;
+color: red;<br>
+}</code>
+</div>
+<p><strong>Note:</strong> An id name cannot start with a number!</p>
+<hr>
+
+<h2>The class Selector</h2>
+<p>The class selector selects elements with a specific class attribute.</p>
+<p>To select elements with a specific class, write a period (.) character, followed by the name of the class.</p>
+<p>In the example below, all HTML elements with class=&quot;center&quot; will be red and center-aligned:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+.center {<br>&nbsp;&nbsp;&nbsp; text-align: center;<br>&nbsp;&nbsp;&nbsp; color: red;<br>}</code>
+</div>
+<br>
+
+
+<p>You can also specify that only specific HTML elements should be affected by a class.</p>
+<p>In the example below, only <code class="code">&lt;p&gt;</code> elements with class=&quot;center&quot; will be center-aligned:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+p.center {<br>&nbsp;&nbsp;&nbsp; text-align: center;<br>&nbsp;&nbsp;&nbsp; color: red;<br>}</code>
+</div>
+<br>
+
+<p>HTML elements 
+can also refer to more than one class.</p>
+<p>In the example below, the <code class="code">&lt;p&gt;</code> element will be styled according to class=&quot;center&quot; 
+and to class=&quot;large&quot;:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+&lt;p class=&quot;center large&quot;&gt;This paragraph refers to two classes.&lt;/p&gt;
+</code>
+</div>
+ <p><strong>Note:</strong> A class name cannot start with a number!</p>
+<hr>
+
+<h2>Grouping Selectors</h2>
+<p>If you have elements with the same style definitions, like this:</p>
+<div style="border:solid">
+<code class="code">
+h1
+{<br>
+&nbsp;&nbsp;&nbsp;
+text-align: center;<br>&nbsp;&nbsp;&nbsp; color: red;<br>
+}<br>
+<br>h2
+{<br>
+&nbsp;&nbsp;&nbsp;
+text-align: center;<br>&nbsp;&nbsp;&nbsp; color: red;<br>}<br>
+<br>p
+{<br>
+&nbsp;&nbsp;&nbsp;
+text-align: center;<br>&nbsp;&nbsp;&nbsp; color: red;<br>
+}</code></div>
+
+
+<p>It will be better to group the selectors, to minimize the code.</p>
+<p>To group selectors, separate each selector with a comma.</p>
+<p>In the example below we have grouped the selectors from the code above:</p>
+<div style="border:solid">
+<h3>Example</h3>
+<code class="code">
+h1, h2, p
+{<br>
+&nbsp;&nbsp;&nbsp;
+text-align: center;<br>&nbsp;&nbsp;&nbsp; color: red;<br>}</code>
+</div>
+<hr>
+
+
+<h2>CSS Comments</h2>
+<p>Comments are used to explain the code, and may help when you edit the source code at a later date.</p>
+<p>Comments are ignored by browsers.</p>
+<p>A CSS comment starts with /* and ends with */. Comments can also span 
+multiple lines:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+p
+{<br>
+&nbsp;&nbsp;&nbsp;
+color: red;<br>
+&nbsp;&nbsp;&nbsp;
+/* This is a single-line comment */<br>
+&nbsp;&nbsp;&nbsp;
+text-align: center;<br>
+}<br><br>/* This is<br>a multi-line<br>comment */
+</code>
+</div>
+<hr>
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+</article>
+<a id="link" href="csscolors.html" alt="Next" title="Next">Next</a>
+
+
+</div>
+
+<div class="footer">
+  <p><b>Designed</b> & <b>Developed</b> By<a href="http://instagram.com/itsmemanishtiwari">Manish Tiwari</a>.</p>
+<p><strong>DISCLAIMER:</strong> All website's content are constantly reviewed to avoid any kind of errors, but we cannot warrant full correctness of all content. 
+While using this site, you agree to have read and accepted our terms of use and privacy policy. <br>All Rights Reserved.&copy;</p>
+<strong>Follow us on</strong> <a href="http://fb.com/mycscode">Facebook</a>
+			 			 <a href="http://instagram.com/mycscode">Instagram</a>
+						 <a href="http://twitter.com/mycscode">Twitter</a>
+<br>
+<a href="termsofuse">Terms of Use</a>
+<a href="privacy">Privacy Policy</a>
+</div>
+
+
+
+
+</body>
+</html>

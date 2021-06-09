@@ -1,0 +1,761 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" 
+      type="image/png" 
+      href="/css/home/logo.png">
+<title>MYCSCODE |Learn Free Web Tutorial</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="Description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, and PHP.">
+<meta name="Keywords" content="HTML,CSS,JavaScript,PHP,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips,mycscode,my,cs,code,BASIC TO ADVANCED,EASY TO LEARN,LEARN FREE WEB,ADVANCED START,TUTORIAL LEARN,islands,coding,Learn web Designing,learn web devlopment,">
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9227713632689850",
+    enable_page_level_ads: true
+  });
+</script>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+<style>
+.header {
+	background-color: dodgerblue;
+	color: white;
+	padding: 10px;
+	font-family: courier;
+	text-align: center;
+	}
+
+.topnav {
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 24px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.topnav a:hover {
+  background-color: dodgerblue;
+  color: black;
+}
+
+.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+#link {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding:10px;
+    font-size:20px;
+    line-height: 25px;
+    border-radius: 4px;
+    background-color:red;
+}
+
+
+#link:hover {
+    background-color:dodgerblue;
+    color: black;
+
+}
+
+#link:active{
+	background-color: #f1f1f1;
+	color: black;
+}
+	
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    background-color: dodgerblue;
+    color:black;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 40px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+a{
+    display: inline;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding:10px;
+    line-height: 25px;
+
+}
+a:hover{
+	background-color: dodgerblue;
+	color: black;
+}
+a:active {
+  background-color: grey;
+  color: black;
+		
+}
+
+
+
+.code{
+    color: dodgerblue;
+}
+	
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    color: black;
+    text-align: center;
+    font-family:Verdana,sans-serif;
+    font-size:15px;
+}
+</style>
+</head>
+
+<body>
+<div class="header">
+  <h1>MYCSCODE</h1>
+<p style="text-align:right;font-size:25px;">Learn Free Web Tutorials.</p>
+</div>
+<div class="topnav" id="myTopnav">
+  <a href="/css/home/index" class="active">Home</a>
+  <a href="/html/learnhtml">HTML</a>
+  <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+      <h1 style="text-align:center;color:white;">CSS Content</h1>
+  <a href="cssintroduction">CSS Introduction</a>
+  <a href="csssyntax">CSS Syntax</a>
+  <a href="csscolors">CSS Colors</a>
+  <a href="cssbackground">CSS Background</a>
+  <a href="cssborders">CSS Borders</a>
+  <a href="cssmargins">CSS Margins</a>
+  <a href="csspadding">CSS Padding</a>
+  <a href="csshw">CSS Height/Width</a>
+  <a href="cssboxmodel">CSS Box Model</a>
+  <a href="cssoutline">CSS Outline</a>
+  <a href="csstext">CSS Text</a>
+  <a href="cssfonts">CSS Fonts</a>
+  <a href="cssicons">CSS Icons</a>
+  <a href="csslinks">CSS Links</a>
+  <a href="csslists">CSS Lists</a>
+  <a href="csstables">CSS Tables</a>
+  <a href="cssdisplay">CSS Display</a>
+  <a href="cssmw">CSS Max-width</a>
+  <a href="cssposition">CSS Position</a>
+  <a href="cssoverflow">CSS Overflow</a>
+  <a href="cssfloat">CSS Float</a>
+  <a href="cssib">CSS Inline-block</a>
+  <a href="cssalign">CSS Align</a>
+  <a href="cssopacity">CSS Opacity</a>
+  <a href="cssnavigationbar">CSS Navigation Bar</a> 
+  </div>
+</div>
+
+  <a style="font-size:25px;cursor:pointer;padding: 20px 24px;" onclick="openNav()">CSS</a>
+  <a href="/javascript/learnjavascript">JAVASCRIPT</a>
+  <a href="/php/learnphp">PHP</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;
+    <i class="fa fa-bars"></i>
+  </a>
+</div>    
+
+<div style="padding:15px 15px;font-size:25px">
+<marquee style="text-align:right;color:red;">Click on CSS to See the Content of the Tutorial.</marquee>
+<a id="link" href="csssyntax" alt="Previous" title="Previous">Previous</a>
+
+<article style="background-color:#f1f1f1;padding-left:16px;font-size:20px">
+
+<hr>
+<p>HTML colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</p>
+<hr>
+
+<h2>Color Names</h2>
+<p>In HTML, a color can be specified by using a color name:</p>
+
+<div class="w3-row w3-center" style="margin:0 -16px;line-height:80px;color:white;">
+  
+    <div style="background-color:tomato;">Tomato</div>
+ 
+    <div style="background-color:orange;">Orange</div>
+
+    <div style="background-color:dodgerblue;">DodgerBlue</div>
+ 
+    <div style="background-color:mediumseagreen;">MediumSeaGreen</div>
+ 
+    <div style="background-color:gray;">Gray</div>
+  
+    <div style="background-color:slateblue;">SlateBlue</div>
+  
+    <div style="background-color:violet;">Violet</div>
+ 
+    <div style="background-color:lightgray;color:#444444">LightGray</div>
+</div>
+
+<hr>
+
+<h2>Background Color</h2>
+<p>You can set the background color for HTML elements:</p>
+
+<div style="background-color:dodgerblue; text-align:center;color:white;font-size:24px;">Hello World</div>
+<br>
+<div style="background-color:tomato;color:white;"><br>
+  India is a vast South Asian country with diverse terrain - from Himalayan peaks to Indian Ocean coastline - and history reaching back 5 millennia. In the north, Mughal Empire landmarks include Delhi's Red Fort complex and massive Jama Masjid mosque, plus Agra's iconic Taj Mahal mausoleum. Pilgrims bathe in the Ganges in Varanasi, and Rishikesh is a yoga centre and base for Himalayan trekking.<br><br>
+</div>
+
+<hr>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+  &lt;h1 style=&quot;background-color:DodgerBlue;&quot;&gt;Hello World&lt;/h1&gt;<br>&lt;p style=&quot;background-color:Tomato;&quot;&gt;India is a...&lt;/p&gt;
+<br></code>
+</div>
+
+
+<hr>
+<h2>Text Color</h2>
+<p>You can set the color of text:</p>
+<h3 style="color:tomato">Hello World</h3>
+<p style="color:dodgerblue">India is a vast South Asian country with diverse terrain - from Himalayan peaks to Indian Ocean coastline - and history reaching back 5 millennia.</p>
+<p style="color:mediumseagreen">Pilgrims bathe in the Ganges in Varanasi, and Rishikesh is a yoga centre and base for Himalayan trekking.</p>
+
+<div style="border:solid;">
+ <h3>Example</h3>
+<code class="code">
+  &lt;h1 style=&quot;color:Tomato;&quot;&gt;Hello 
+  World&lt;/h1&gt;<br>&lt;p style=&quot;color:DodgerBlue;&quot;&gt;<br>India is a...<br>&lt;/p&gt;<br>&lt;p style=&quot;color:MediumSeaGreen;&quot;&gt;<br>Pilgrims bathe...<br>&lt;/p&gt;</code>
+  </div>
+
+
+<hr>
+<h2>Border Color</h2>
+<p>You can set the color of borders:</p>
+<h2 style="border: 2px solid Tomato;">Hello World</h2>
+<h2 style="border: 2px solid DodgerBlue;">Hello World</h2>
+<h2 style="border: 2px solid Violet;">Hello World</h2>
+
+
+<div style="border:solid;">
+ <h3>Example</h3>
+<code class="code">
+  &lt;h1 style=&quot;border:2px 
+  solid Tomato;&quot;&gt;Hello 
+  World&lt;/h1&gt;<br>&lt;h1 style=&quot;border:2px 
+  solid DodgerBlue;&quot;&gt;Hello 
+  World&lt;/h1&gt;<br>&lt;h1 style=&quot;border:2px 
+  solid Violet;&quot;&gt;Hello 
+  World&lt;/h1&gt;</code>
+</div>
+
+<hr>
+<h2>Color Values</h2>
+<p>In HTML, colors can also be specified using RGB values, HEX values, HSL 
+values, RGBA values, and HSLA values:</p>
+<p>Same as color name "Tomato":</p>
+
+<div  style="line-height:60px;color:white;font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+  <div style="background-color:rgb(255, 99, 71);margin:10px 0;">rgb(255, 99, 71)</div>
+  <div style="background-color:#ff6347;margin:10px 0;">#ff6347</div>
+  <div style="background-color:hsl(9, 100%, 64%);margin:10px 0;">hsl(9, 100%, 64%)</div>
+</div>
+<p>Same as color name "Tomato", but 50% transparent:</p>
+<div style="line-height:60px;color:white;font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+  <div style="background-color:rgba(255, 99, 71, 0.5);margin:10px 0;">rgba(255, 99, 71, 0.5)</div>
+  <div style="background-color:hsla(9, 100%, 64%, 0.5);margin:10px 0;">hsla(9, 100%, 64%, 0.5)</div>
+</div>
+
+
+
+<div style="border:solid;">
+ <h3>Example</h3>
+<code class="code">
+  &lt;h1 style=&quot;background-color:rgb(255, 
+  99, 71);&quot;&gt;...&lt;/h1&gt;<br>&lt;h1 style=&quot;background-color:#ff6347;&quot;&gt;...&lt;/h1&gt;<br>&lt;h1 style=&quot;background-color:hsl(9, 
+  100%, 64%);&quot;&gt;...&lt;/h1&gt;<br><br>&lt;h1 style=&quot;background-color:rgba(255, 
+  99, 71, 0.5);&quot;&gt;...&lt;/h1&gt;<br>&lt;h1 style=&quot;background-color:hsla(9, 
+  100%, 64%, 0.5);&quot;&gt;...&lt;/h1&gt;</code>
+</div>
+
+<hr>
+
+<h2>RGB Value</h2>
+<p>In HTML, a color can be specified as an RGB value, using this formula:</p> 
+<p style="font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">rgb(<em>red,</em> <em>green</em>, <em>blue</em>)</p>
+<p>Each parameter (red, green, and 
+blue) defines the intensity of the color between 0 and 255.</p>
+<p>For example, rgb(255, 0, 0) is displayed as red, 
+because red is set to its highest value (255) and the others are 
+set to 0.</p>
+<p>To display the color black, all color parameters must be set to 0, like this: 
+rgb(0, 0, 0).</p>
+<p>To display the color white, all color parameters must be set to 255, like 
+this: rgb(255, 255, 255). </p>
+
+
+<div style="border:solid;">
+ <h3>Example</h3>
+<code class="code">
+<div style="line-height:80px;color:white;font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+  <div>
+    <div style="background-color:rgb(255, 0, 0);">rgb(255, 0, 0)</div>
+  </div>
+  <div>
+    <div style="background-color:rgb(0, 0, 255);">rgb(0, 0, 255)</div>
+  </div>
+  <div>
+    <div style="background-color:rgb(60, 179, 113);">rgb(60, 179, 113)</div>
+  </div>
+  <div>
+    <div style="background-color:rgb(238, 130, 238);">rgb(238, 130, 238)</div>
+  </div>
+  <div>
+    <div style="background-color:rgb(255, 165, 0);">rgb(255, 165, 0)</div>
+  </div>
+  <div>
+    <div style="background-color:rgb(106, 90, 205);">rgb(106, 90, 205)</div>
+  </div>
+</div>
+</code>
+</div>
+
+
+
+<hr>
+<p>Shades of gray are often defined using equal values for all the 3 light sources:</p>
+
+<div style="border:solid;">
+ <h3>Example</h3>
+<div  style="line-height:80px;color:white;font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+  <div>
+    <div style="background-color:rgb(0, 0, 0);">rgb(0, 0, 0)</div>
+  </div>
+  <div>
+    <div style="background-color:rgb(60, 60, 60);">rgb(60, 60, 60)</div>
+  </div>
+  <div>
+    <div style="background-color:rgb(120, 120, 120);">rgb(120, 120, 120)</div>
+  </div>
+  <div>
+    <div style="background-color:rgb(180, 180, 180);">rgb(180, 180, 180)</div>
+  </div>
+  <div>
+    <div style="background-color:rgb(240, 240, 240);color:#555555">rgb(240, 240, 240)</div>
+  </div>
+  <div>
+    <div style="background-color:rgb(255, 255, 255);color:#555555">rgb(255, 255, 255)</div>
+  </div>
+</div>
+</div>
+
+
+<hr>
+<h2>HEX Value</h2>
+<p>In HTML, a color can be specified using a hexadecimal value in 
+the form:</p>
+<p style="font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">#<em>rrggbb</em></p>
+<p>Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).</p>
+<p>For example, #ff0000 is displayed as red, because red is set to its highest value (ff) and the others are set to 
+the lowest value (00).</p>
+
+<div style="border:solid;">
+ <h3>Example</h3>
+<div style="line-height:80px;color:white;font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+  <div>
+    <div style="background-color:#ff0000;">#ff0000</div>
+  </div>
+  <div>
+    <div style="background-color:#0000ff;">#0000ff</div>
+  </div>
+  <div>
+    <div style="background-color:#3cb371;">#3cb371</div>
+  </div>
+  <div>
+    <div style="background-color:#ee82ee;">#ee82ee</div>
+  </div>
+  <div>
+    <div style="background-color:#ffa500;">#ffa500</div>
+  </div>
+  <div>
+    <div style="background-color:#6a5acd;">#6a5acd</div>
+  </div>
+</div>
+</div>
+
+<hr>
+
+<p>Shades of gray are often defined using equal values for all the 3 light sources:</p>
+<div style="border:solid;">
+ <h3>Example</h3>
+<div style="line-height:80px;color:white;font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+  <div>
+    <div style="background-color:#000000;">#000000</div>
+  </div>
+  <div>
+    <div style="background-color:#3c3c3c;">#3c3c3c</div>
+  </div>
+  <div>
+    <div style="background-color:#787878;">#787878</div>
+  </div>
+  <div>
+    <div style="background-color:#b4b4b4;">#b4b4b4</div>
+  </div>
+  <div>
+    <div style="background-color:#f0f0f0;color:#555555">#f0f0f0</div>
+  </div>
+  <div>
+    <div style="background-color:#ffffff;color:#555555">#ffffff</div>
+  </div>
+</div>
+</div>
+
+<hr>
+
+<h2>HSL Value</h2>
+<p>In HTML, a color can be specified using hue, saturation, and lightness (HSL) in 
+the form:</p>
+<p style="font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">hsl(<em>hue</em>, <em>saturation</em>, <em>lightness</em>)</p>
+<p>Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.</p>
+<p>Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color.</p>
+<p>Lightness is also a percentage, 0% is black, 50% is neither light or dark, 100% is white</p>
+
+<div style="border:solid;">
+ <h3>Example</h3>
+<div style="line-height:80px;color:white;font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+  <div>
+    <div style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</div>
+  </div>
+  <div>
+    <div style="background-color:hsl(240, 100%, 50%)">hsl(240, 100%, 50%)</div>
+  </div>
+  <div>
+    <div style="background-color:hsl(147, 50%, 47%);">hsl(147, 50%, 47%)</div>
+  </div>
+  <div>
+    <div style="background-color:hsl(300, 76%, 72%);">hsl(300, 76%, 72%)</div>
+  </div>
+  <div>
+    <div style="background-color:hsl(39, 100%, 50%);">hsl(39, 100%, 50%)</div>
+  </div>
+  <div>
+    <div style="background-color:hsl(248, 53%, 58%);">hsl(248, 53%, 58%)</div>
+  </div>
+</div>
+</div>
+
+<hr>
+<h3>Saturation</h3>
+<p>Saturation can be described as the intensity of a color.</p>
+<p>100% is pure color, no shades of gray</p>
+<p>50% is 50% gray, but you can still see the color.</p>
+<p>0% is completely gray, you can no longer see the color.</p>
+
+<div style="border:solid;">
+ <h3>Example</h3>
+<div style="line-height:80px;color:white;font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+  <div>
+    <div style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</div>
+  </div>
+  <div>
+    <div style="background-color:hsl(0, 80%, 50%)">hsl(0, 80%, 50%)</div>
+  </div>
+  <div>
+    <div style="background-color:hsl(0, 60%, 50%);">hsl(0, 60%, 50%)</div>
+  </div>
+  <div>
+    <div style="background-color:hsl(0, 40%, 50%);">hsl(0, 40%, 50%)</div>
+  </div>
+  <div>
+    <div style="background-color:hsl(0, 20%, 50%);">hsl(0, 20%, 50%)</div>
+  </div>
+  <div>
+    <div style="background-color:hsl(0, 0%, 50%);">hsl(0, 0%, 50%)</div>
+  </div>
+</div>
+</div>
+
+
+<hr>
+<h3>Lightness</h3>
+<p>The lightness of a color can be described as how much light you want to give the color, where 0% means no light (black), 50% means 50% light (neither dark nor light) 100% means full lightness (white).</p>
+<div style="border:solid;">
+ <h3>Example</h3>
+
+<div style="line-height:80px;color:white;font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+  <div>
+    <div style="background-color:hsl(0, 100%, 0%);">hsl(0, 100%, 0%)</div>
+  </div>
+  <div>
+    <div style="background-color:hsl(0, 100%, 25%)">hsl(0, 100%, 25%)</div>
+  </div>
+  <div>
+    <div style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</div>
+  </div>
+  <div>
+    <div style="background-color:hsl(0, 100%, 75%);">hsl(0, 100%, 75%)</div>
+  </div>
+  <div>
+    <div style="background-color:hsl(0, 100%, 90%);color:#555555">hsl(0, 100%, 90%)</div>
+  </div>
+  <div>
+    <div style="background-color:hsl(0, 100%, 100%);color:#555555;">hsl(0, 100%, 100%)</div>
+  </div>
+</div>
+</div>
+
+
+<hr>
+
+<p>Shades of gray are often defined by setting the hue and saturation to 0, and 
+adjust the lightness from 0% to 100% to get darker/lighter shades:</p>
+<div style="border:solid;">
+ <h3>Example</h3>
+<div style="line-height:80px;color:white;font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+  <div>
+    <div style="background-color:hsl(0, 0%, 0%);">hsl(0, 0%, 0%)</div>
+  </div>
+  <div>
+    <div style="background-color:hsl(0, 0%, 24%)">hsl(0, 0%, 24%)</div>
+  </div>
+  <div>
+    <div style="background-color:hsl(0, 0%, 47%);">hsl(0, 0%, 47%)</div>
+  </div>
+  <div>
+    <div style="background-color:hsl(0, 0%, 71%);">hsl(0, 0%, 71%)</div>
+  </div>
+  <div>
+    <div style="background-color:hsl(0, 0%, 94%);color:#555555">hsl(0, 0%, 94%)</div>
+  </div>
+  <div>
+    <div style="background-color:hsl(0, 0%, 100%);color:#555555;">hsl(0, 0%, 100%)</div>
+  </div>
+</div>
+</div>
+
+<hr>
+<h2>RGBA Value</h2>
+<p>RGBA color values are an extension of RGB color values with an alpha channel 
+- which specifies the opacity for a color.</p>
+<p>An RGBA color value is 
+specified with:</p>
+<p style="font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">rgba(<em>red,</em> <em>green</em>, <em>blue, 
+alpha</em>)</p>
+<p>The alpha parameter is a number 
+between 0.0 (fully transparent) and 1.0 (not transparent at all):</p>
+<div style="border:solid;">
+    <h3>Example</h3>
+<div 
+  style="
+    line-height:80px;
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+    font-family:Consolas, 'Courier New', Courier, monospace;
+    background-image:url(img_bg_eyeicon.png), url(img_bg_transparent.gif);
+    background-repeat:no-repeat, repeat;
+    background-position:center, top left;
+    background-color:#ffffff;">
+  <div>
+    <div style="background-color:rgba(255, 99, 71, 0);color:#555555;">rgba(255, 99, 71, 0)</div>
+  </div>
+  <div>
+    <div style="background-color:rgba(255, 99, 71, 0.2);color:#555555;">rgba(255, 99, 71, 0.2)</div>
+  </div>
+  <div>
+    <div style="background-color:rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)</div>
+  </div>
+  <div>
+    <div style="background-color:rgba(255, 99, 71, 0.6);">rgba(255, 99, 71, 0.6)</div>
+  </div>
+  <div>
+    <div style="background-color:rgba(255, 99, 71, 0.8);">rgba(255, 99, 71, 0.8)</div>
+  </div>
+  <div>
+    <div style="background-color:rgba(255, 99, 71, 1);">rgba(255, 99, 71, 1)</div>
+  </div>
+</div>
+</div>
+
+<hr>
+<h2>HSLA Value</h2>
+<p>HSLA color values are an extension of HSL color values with an alpha channel 
+- which specifies the opacity for a color.</p>
+<p>An HSLA color value is 
+specified with:</p>
+<p style="font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">hsla(<em>hue,</em> <em>saturation</em>, <em>lightness, 
+alpha</em>)</p>
+<p>The alpha parameter is a number 
+between 0.0 (fully transparent) and 1.0 (not transparent at all):</p>
+
+<div style="border:solid;">
+ <h3>Example</h3>
+
+<div 
+  style="
+    line-height:80px;
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+    font-family:Consolas, 'Courier New', Courier, monospace;
+    background-image:url(img_bg_eyeicon.png), url(img_bg_transparent.gif);
+    background-repeat:no-repeat, repeat;
+    background-position:center, top left;
+    background-color:#ffffff;">
+  <div>
+    <div style="background-color:hsla(9, 100%, 64%, 0);color:#555555;">hsla(9, 100%, 64%, 0)</div>
+  </div>
+  <div>
+    <div style="background-color:hsla(9, 100%, 64%, 0.2);color:#555555;">hsla(9, 100%, 64%, 0.2)</div>
+  </div>
+  <div>
+    <div style="background-color:hsla(9, 100%, 64%, 0.4);">hsla(9, 100%, 64%, 0.4)</div>
+  </div>
+  <div>
+    <div style="background-color:hsla(9, 100%, 64%, 0.6);">hsla(9, 100%, 64%, 0.6)</div>
+  </div>
+  <div>
+    <div style="background-color:hsla(9, 100%, 64%, 0.8);">hsla(9, 100%, 64%, 0.8)</div>
+  </div>
+  <div>
+    <div style="background-color:hsla(9, 100%, 64%, 1);">hsla(9, 100%, 64%, 1)</div>
+  </div>
+</div>
+</div>
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+<a id="link" href="cssbackground" alt="Next" title="Next">Next</a>
+</div>
+
+<div class="footer">
+  <p><b>Designed</b> & <b>Developed</b> By<a href="http://instagram.com/itsmemanishtiwari">Manish Tiwari</a>.</p>
+<p><strong>DISCLAIMER:</strong> All website's content are constantly reviewed to avoid any kind of errors, but we cannot warrant full correctness of all content. 
+While using this site, you agree to have read and accepted our terms of use and privacy policy. <br>All Rights Reserved.&copy;</p>
+<strong>Follow us on</strong> <a href="http://fb.com/mycscode">Facebook</a>
+			 			 <a href="http://instagram.com/mycscode">Instagram</a>
+						 <a href="http://twitter.com/mycscode">Twitter</a>
+<br>
+<a href="termsofuse">Terms of Use</a>
+<a href="privacy">Privacy Policy</a>
+</div>
+
+
+
+
+</body>
+</html>

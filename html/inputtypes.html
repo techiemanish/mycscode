@@ -1,0 +1,736 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" 
+      type="/image/png" 
+      href="/html/home/logo.png">
+<title>MYCSCODE |Learn Free Web Tutorial</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="Description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, and PHP.">
+<meta name="Keywords" content="HTML,CSS,JavaScript,PHP,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips,mycscode,my,cs,code,BASIC TO ADVANCED,EASY TO LEARN,LEARN FREE WEB,ADVANCED START,TUTORIAL LEARN,islands,coding,Learn web Designing,learn web devlopment,">
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9227713632689850",
+    enable_page_level_ads: true
+  });
+</script>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+<style>
+.header {
+	background-color: dodgerblue;
+	color: white;
+	padding: 10px;
+	font-family: courier;
+	text-align: center;
+	}
+
+.topnav {
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 24px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.topnav a:hover {
+  background-color: dodgerblue;
+  color: black;
+}
+
+.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+a{
+    display: inline;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding:10px;
+    line-height: 25px;
+
+}
+a:hover{
+	background-color: dodgerblue;
+	color: black;
+}
+a:active {
+  background-color: grey;
+  color: black;
+		
+}
+
+#link {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding:10px;
+    font-size:20px;
+    line-height: 25px;
+    border-radius: 4px;
+    background-color:red;
+}
+
+
+#link:hover {
+    background-color:dodgerblue;
+    color: black;
+
+}
+
+#link:active{
+	background-color: #f1f1f1;
+	color: black;
+}
+	
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    background-color: dodgerblue;
+    color:black;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 40px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.code{
+    color: dodgerblue;
+}
+
+	
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    color: black;
+    text-align: center;
+    font-family:Verdana,sans-serif;
+    font-size:15px;
+
+}
+</style>
+</head>
+
+<body>
+<div class="header">
+  <h1>MYCSCODE</h1>
+<p style="text-align:right;font-size:25px;">Learn Free Web Tutorials.</p>
+</div>
+<div class="topnav" id="myTopnav">
+  <a href="/" class="active">Home</a>
+  <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+      <h1 style="text-align:center;color:white;">HTML Content</h1>
+  <a href="introduction">HTML Introduction</a>
+  <a href="editors">HTML Editors</a>
+  <a href="basic">HTML Basic</a>
+  <a href="elements">HTML Elements</a>
+  <a href="attributes">HTML Attributes</a>
+  <a href="headings">HTML Headings</a>
+  <a href="paragraphs">HTML Paragraphs</a>
+  <a href="styles">HTML Styles</a>
+  <a href="formatting">HTML Formatting</a>
+  <a href="quotations">HTML Quotations</a>
+  <a href="comments">HTML Comments</a>
+  <a href="colors">HTML Colors</a>
+  <a href="css">HTML Css</a>
+  <a href="links">HTML Links</a>
+  <a href="images">HTML Images</a>
+  <a href="tables">HTML Tables</a>
+  <a href="lists">HTML Lists</a>
+  <a href="blocks">HTML Blocks</a>
+  <a href="classes">HTML Classes</a>
+  <a href="id">HTML ID</a>
+  <a href="charset">HTML Charset</a>
+  <a href="forms">HTML Forms</a>
+  <a href="formelements">HTML Form Elements</a>
+  <a href="inputtypes">HTML Input Types</a>
+  <a href="inputattributes">HTML Input Attributes</a> 
+  </div>
+</div>
+
+<a style="font-size:25px;cursor:pointer;padding: 20px 24px;" onclick="openNav()">HTML</a>
+
+
+  <a href="/css/learncss">CSS</a>
+  <a href="/javascript/learnjavascript">JAVASCRIPT</a>
+  <a href="/php/learnphp">PHP</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;
+    <i class="fa fa-bars"></i>
+  </a>
+</div>    
+
+
+
+<div style="padding:15px 15px;font-size:25px">
+<marquee style="text-align:right;color:red;">Click on HTML to See the Content of the Tutorial.</marquee>
+
+<a id="link" href="formelements" alt="Previous" title="Previous">Previous</a>
+
+<article style="background-color:#f1f1f1;padding-left:16px;font-size:20px">
+
+<h1>HTML <span>Input Types</span></h1>
+<hr>
+<p>This chapter describes the different input types for the <code class="code">&lt;input&gt;</code> element. </p>
+<hr>
+
+<h2>Input Type Text</h2>
+<p><code class="code">&lt;input type=&quot;text&quot;&gt;</code> defines a <strong>one-line text input field</strong>:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+&lt;form&gt;<br>
+&nbsp;
+First name:&lt;br&gt;<br>&nbsp; &lt;input type=&quot;text&quot; name=&quot;firstname&quot;&gt;&lt;br&gt;<br>
+&nbsp;
+Last name:&lt;br&gt;<br>&nbsp; &lt;input type=&quot;text&quot; name=&quot;lastname&quot;&gt;<br>
+&lt;/form&gt;</code>
+</div>
+
+<hr>
+<p>This is how the HTML code above will be displayed in a browser:</p>
+First name:<br>
+<input type="text"><br>
+Last name:<br>
+<input type="text"><br>
+<hr>
+
+<h2>Input Type Password</h2>
+<p><code class="code">&lt;input type=&quot;password&quot;&gt;</code> defines a <strong>password field</strong>:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+&lt;form&gt;<br>
+ &nbsp;
+ User name:&lt;br&gt;<br>&nbsp; &lt;input type=&quot;text&quot; name=&quot;username&quot;&gt;&lt;br&gt;<br>
+ &nbsp;
+ User password:&lt;br&gt;<br>&nbsp; &lt;input type=&quot;password&quot; name=&quot;psw&quot;&gt;<br>
+&lt;/form&gt;</code>
+</div>
+<p>This is how the HTML code above will be displayed in a browser:</p>
+User name:<br>
+<input type="text"><br>
+User password:<br>
+<input type="password">
+<p>The characters in a password field are masked (shown as asterisks or circles).
+</p>
+<hr>
+
+<h2>Input Type Submit</h2>
+<p><code class="code">&lt;input type="submit"&gt;</code> defines a button for <strong>
+submitting</strong> form data to a <strong>form-handler</strong>.</p>
+<p>The form-handler is typically a server page with a script for processing 
+input data.</p>
+<p>The form-handler is specified in the form's <code class="code">action</code> 
+attribute:</p>
+<div style="border:solid;">
+ <h3>Example</h3>
+<code class="code">
+ &lt;form action=&quot;/action_page.php&quot;&gt;<br>&nbsp; First name:&lt;br&gt;<br>&nbsp; &lt;input type=&quot;text&quot; 
+ name=&quot;firstname&quot; value=&quot;Mickey&quot;&gt;&lt;br&gt;<br>&nbsp; Last name:&lt;br&gt;<br>&nbsp; &lt;input 
+ type=&quot;text&quot; name=&quot;lastname&quot; value=&quot;Mouse&quot;&gt;&lt;br&gt;&lt;br&gt;<br>&nbsp; &lt;input type=&quot;submit&quot; 
+ value=&quot;Submit&quot;&gt;<br>&lt;/form&gt;</code>
+</div>
+<hr>
+
+<p>This is how the HTML code above will be displayed in a browser:</p>
+<form action="/action_page.php" target="_blank">
+First name:<br>
+<input type="text" name="firstname" value="Mickey"><br>
+Last name:<br>
+<input type="text" name="lastname" value="Mouse">
+<br><br>
+<input type="submit" value="Submit">
+</form> 
+<p>If you omit the submit button's value attribute, the button will get a default text:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+ &lt;form action=&quot;/action_page.php&quot;&gt;<br>&nbsp; First name:&lt;br&gt;<br>&nbsp; &lt;input type=&quot;text&quot; 
+ name=&quot;firstname&quot; value=&quot;Mickey&quot;&gt;&lt;br&gt;<br>&nbsp; Last name:&lt;br&gt;<br>&nbsp; &lt;input 
+ type=&quot;text&quot; name=&quot;lastname&quot; value=&quot;Mouse&quot;&gt;&lt;br&gt;&lt;br&gt;<br>&nbsp; &lt;input type=&quot;submit&quot;&gt;<br>&lt;/form&gt;</code>
+</div>
+<hr>
+
+<h2>Input Type Reset</h2>
+<p><code class="code">&lt;input type="reset"&gt;</code> defines a <strong>reset button</strong> 
+that will reset all form values to their default values:</p>
+<div style="border:solid;">
+ <h3>Example</h3>
+<code class="code">
+ &lt;form action=&quot;/action_page.php&quot;&gt;<br>&nbsp; First name:&lt;br&gt;<br>&nbsp; &lt;input type=&quot;text&quot; 
+ name=&quot;firstname&quot; value=&quot;Mickey&quot;&gt;&lt;br&gt;<br>&nbsp; Last name:&lt;br&gt;<br>&nbsp; &lt;input 
+ type=&quot;text&quot; name=&quot;lastname&quot; value=&quot;Mouse&quot;&gt;&lt;br&gt;&lt;br&gt;<br>&nbsp; &lt;input type=&quot;submit&quot; 
+ value=&quot;Submit&quot;&gt;<br>&nbsp; &lt;input type=&quot;reset&quot;&gt;<br>&lt;/form&gt;</code>
+</div>
+
+<p>This is how the HTML code above will be displayed in a browser:</p>
+<form action="/action_page.php" target="_blank">
+First name:<br>
+<input type="text" name="firstname0" value="Mickey"><br>
+Last name:<br>
+<input type="text" name="lastname0" value="Mouse">
+<br><br>
+<input type="submit" value="Submit">
+<input type="reset">
+</form>
+
+<p>If you change the input values and then click the "Reset" button, the form-data will be reset to the default values.</p>
+<hr>
+
+<h2>Input Type Radio</h2>
+<p><code class="code">&lt;input type=&quot;radio&quot;&gt;</code> defines a <strong>radio button</strong>.</p>
+<p>Radio buttons let a user select ONLY ONE of a limited number of choices:</p>
+<div style="border:solid;">
+ <h3>Example</h3>
+<code class="code">
+ &lt;form&gt;<br>&nbsp; &lt;input type=&quot;radio&quot; name=&quot;gender&quot; value=&quot;male&quot; 
+ checked&gt; Male&lt;br&gt;<br>&nbsp; &lt;input 
+ type=&quot;radio&quot; name=&quot;gender&quot; value=&quot;female&quot;&gt; Female&lt;br&gt;<br>&nbsp; &lt;input 
+ type=&quot;radio&quot; name=&quot;gender&quot; value=&quot;other&quot;&gt; Other<br>&lt;/form&gt;</code>
+</div>
+
+<p>This is how the HTML code above will be displayed in a browser:</p>
+<input type="radio" name="gender" value="V1" checked> Male<br>
+<input type="radio" name="gender" value="V2"> Female<br>
+<input type="radio" name="gender" value="V3"> Other
+<hr>
+
+<h2>Input Type Checkbox</h2>
+<p><code class="code">&lt;input type=&quot;checkbox&quot;&gt;</code> defines a <strong>checkbox</strong>.</p>
+<p>Checkboxes let a user select ZERO or MORE options of a limited number of choices.</p>
+<div style="border:solid;">
+ <h3>Example</h3>
+<code class="code">
+ &lt;form&gt;<br>&nbsp; &lt;input type=&quot;checkbox&quot; name=&quot;vehicle1&quot; value=&quot;Bike&quot;&gt; I have a bike&lt;br&gt;<br>
+&nbsp;
+&lt;input type=&quot;checkbox&quot; name=&quot;vehicle2&quot; value=&quot;Car&quot;&gt; I have a car <br>
+ &lt;/form&gt;</code>
+</div>
+
+<p>This is how the HTML code above will be displayed in a browser:</p>
+<input type="checkbox" name="vehicle1" value="Bike"> I have a bike
+<br>
+<input type="checkbox" name="vehicle2" value="Car"> I have a car 
+<hr>
+
+<h2>Input Type Button</h2>
+<p><code class="code">&lt;input type=&quot;button&quot;&gt;</code> defines a <strong>button</strong>:</p>
+<div style="border:solid;">
+ <h3>Example</h3>
+ <code class="code">
+  &lt;input type=&quot;button&quot; onclick=&quot;alert('Hello World!')&quot; value=&quot;Click Me!&quot;&gt;</code></div>
+
+  
+  <p>This is how the HTML code above will be displayed in a browser:</p>
+<input type="button" onclick="alert('Hello World!')" value="Click Me!"> 
+<hr>
+
+<h2>HTML5 Input Types</h2>
+<p>HTML5 added several new input types:</p>
+<ul>
+  <li>color</li>
+  <li>date</li>
+  <li>datetime-local</li>
+  <li>email</li>
+  <li>month</li>
+  <li>number</li>
+  <li>range</li>
+  <li>search</li>
+  <li>tel</li>
+  <li>time</li>
+  <li>url</li>
+  <li>week</li>
+</ul>
+
+<p>New input types that are not supported by older web browsers, will behave as <code class="code">&lt;input type=&quot;text&quot;&gt;</code>.</p>
+
+<hr>
+
+<h2>Input Type Color</h2>
+<p>The <code class="code">&lt;input type=&quot;color&quot;&gt;</code> is used for input fields that should contain a color.</p>
+<p>Depending on browser support, a color picker can show up in the input field.</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+ &lt;form&gt;<br>&nbsp;
+ Select your favorite color:<br>&nbsp; &lt;input type=&quot;color&quot; name=&quot;favcolor&quot;&gt;<br>
+ &lt;/form&gt;</code>
+ </div>
+
+<hr>
+
+<h2>Input Type Date</h2>
+<p>The <code class="code">&lt;input type=&quot;date&quot;&gt;</code> is used for input fields that should contain a date.</p>
+<p>Depending on browser support, a date picker can show up in the input field.</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+ &lt;form&gt;<br>&nbsp;
+ Birthday:<br>&nbsp; &lt;input type=&quot;date&quot; name=&quot;bday&quot;&gt;<br>
+ &lt;/form&gt;
+ </code>
+ </div>
+
+<p>You can also use the <code class="code">min</code> and <code class="code">max</code> attributes to add restrictions to dates:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+ &lt;form&gt;<br>&nbsp; Enter a date before 1980-01-01:<br>&nbsp; &lt;input type="date" name="bday" max="1979-12-31"&gt;&lt;br&gt;<br>&nbsp; Enter a date after 2000-01-01:<br>&nbsp; &lt;input type="date" name="bday" min="2000-01-02"&gt;&lt;br&gt;<br>&lt;/form&gt;</code>
+</div>
+<hr>
+
+
+<h2>Input Type Datetime-local</h2>
+<p>The <code class="code">&lt;input type=&quot;datetime-local&quot;&gt;</code> specifies 
+a date and time input field, with no time zone.</p>
+<p>Depending on browser support, a date picker can show up in the input field.</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+ &lt;form&gt;<br>&nbsp;
+ Birthday (date and time):<br>&nbsp; &lt;input type=&quot;datetime-local&quot; name=&quot;bdaytime&quot;&gt;<br>
+ &lt;/form&gt;</code>
+ </div>
+
+<hr>
+
+<h2>Input Type Email</h2>
+<p>The <code class="code">&lt;input type=&quot;email&quot;&gt;</code> is used for input fields that should contain an e-mail address.</p>
+<p>Depending on browser support, the e-mail address can be automatically validated when submitted.</p>
+<p>Some smartphones recognize the email type, and adds &quot;.com&quot; to the keyboard to match email input.</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+ &lt;form&gt;<br>&nbsp;
+ E-mail:<br>&nbsp; &lt;input type=&quot;email&quot; name=&quot;email&quot;&gt;<br>
+ &lt;/form&gt;</code>
+ </div>
+
+
+<h2>Input Type File</h2>
+<p>The <code class="code">&lt;input type=&quot;file&quot;&gt;</code> 
+defines a file-select field and a &quot;Browse&quot; button for file uploads.</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+  &lt;form&gt;<br>&nbsp; Select a file: &lt;input type=&quot;file&quot; name=&quot;myFile&quot;&gt;<br>&lt;/form&gt;
+  </code>
+  </div>
+<hr>
+
+
+<h2>Input Type Month</h2>
+<p>The <code class="code">&lt;input type=&quot;month&quot;&gt;</code> allows the user to select a month and year.</p>
+<p>Depending on browser support, a date picker can show up in the input field.</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+ &lt;form&gt;<br>&nbsp;
+ Birthday (month and year):<br>&nbsp; &lt;input type=&quot;month&quot; name=&quot;bdaymonth&quot;&gt;<br>
+ &lt;/form&gt;
+ </code>
+ </div>
+<hr>
+
+<h2>Input Type Number</h2>
+<p>The <code class="code">&lt;input type=&quot;number&quot;&gt;</code> defines a <strong>
+numeric</strong> input field.</p>
+<p>You can also set restrictions on what numbers are accepted.</p>
+<p>The following example displays a numeric input field, where you can enter a 
+value from 1 to 5:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+ &lt;form&gt;<br>&nbsp;
+ Quantity (between 1 and 5):<br>&nbsp; &lt;input type=&quot;number&quot; name=&quot;quantity&quot; min=&quot;1&quot; max=&quot;5&quot;&gt;<br>&lt;/form&gt;
+ </code>
+ </div>
+<hr>
+
+<h2>Input Restrictions</h2>
+<p>Here is a list of some common input restrictions (some are new in HTML5):</p>
+<table style="border:solid;">
+<tr>
+<th style="width:20%">Attribute</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>disabled</td>
+<td>Specifies that an input field should be disabled</td>
+</tr>
+<tr>
+<td>max</td>
+<td>Specifies the maximum value for an input field</td>
+</tr>
+<tr>
+<td>maxlength</td>
+<td>Specifies the maximum number of character for an input field</td>
+</tr>
+<tr>
+<td>min</td>
+<td>Specifies the minimum value for an input field</td>
+</tr>
+<tr>
+<td>pattern</td>
+<td>Specifies a regular expression to check the input value against</td>
+</tr>
+<tr>
+<td>readonly</td>
+<td>Specifies that an input field is read only (cannot be changed)</td>
+</tr>
+<tr>
+<td>required</td>
+<td>Specifies that an input field is required (must be filled out)</td>
+</tr>
+<tr>
+<td>size</td>
+<td>Specifies the width (in characters) of an input field</td>
+</tr>
+<tr>
+<td>step</td>
+<td>Specifies the legal number intervals for an input field</td>
+</tr>
+<tr>
+<td>value</td>
+<td>Specifies the default value for an input field</td>
+</tr>
+</table>
+<p>
+You will learn more about input restrictions in the next chapter.</p>
+<p>
+The following example displays a numeric input field, where you can enter a 
+value from 0 to 100, in steps of 10. The default value is 30:</p>
+
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+ &lt;form&gt;<br>&nbsp; Quantity:<br>&nbsp;
+&lt;input type=&quot;number&quot; name=&quot;points&quot;
+min=&quot;0&quot; max=&quot;100&quot; step=&quot;10&quot; value=&quot;30&quot;&gt;<br>
+ &lt;/form&gt;
+ </code>
+ </div>
+<hr>
+
+<h2>Input Type Range</h2>
+<p>The <code class="code">&lt;input type=&quot;range&quot;&gt;</code> defines a control for entering a number whose exact value is not important (like a slider control). Default 
+range is 0 to 100. However, you can set restrictions on what 
+numbers are accepted with the <code class="code">min</code>, <code class="code">max</code>, and <code class="code">step</code> attributes:</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+    &lt;form&gt;<br>&nbsp;
+    &lt;input type=&quot;range&quot; name=&quot;points&quot; min=&quot;0&quot; max=&quot;10&quot;&gt;<br>
+ &lt;/form&gt;
+ </code>
+ </div>
+<hr>
+
+<h2>Input Type Search</h2>
+<p>The <code class="code">&lt;input type=&quot;search&quot;&gt;</code> is used for search fields (a search field behaves like a regular text field).</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+ &lt;form&gt;<br>&nbsp;
+ Search Google:<br>&nbsp; &lt;input type=&quot;search&quot; name=&quot;googlesearch&quot;&gt;<br>
+ &lt;/form&gt;
+ </code>
+ </div>
+<hr>
+
+<h2>Input Type Tel</h2>
+<p>The <code class="code">&lt;input type=&quot;tel&quot;&gt;</code> is used for input fields that should contain a telephone number.</p>
+<p><strong>Note:</strong> The tel type is currently only supported in Safari 8.</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+    &lt;form&gt;<br>&nbsp;
+    Telephone:<br>&nbsp; &lt;input type=&quot;tel&quot; name=&quot;usrtel&quot;&gt;<br>
+ &lt;/form&gt;
+ </code>
+ </div>
+<hr>
+ 
+ 
+ <h2>Input Type Time</h2>
+<p>The <code class="code">&lt;input type=&quot;time&quot;&gt;</code> allows the user to select a time (no time zone).</p>
+<p>Depending on browser support, a time picker can show up in the input field.</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+ &lt;form&gt;<br>&nbsp;
+ Select a time:<br>&nbsp; &lt;input type=&quot;time&quot; name=&quot;usr_time&quot;&gt;<br>
+ &lt;/form&gt;
+ </code>
+ </div>
+<hr>
+
+<h2>Input Type Url</h2>
+<p>The <code class="code">&lt;input type=&quot;url&quot;&gt;</code> is used for input fields that should contain a URL address.</p>
+<p>Depending on browser support, the url field can be automatically validated 
+when submitted.</p>
+<p>Some smartphones recognize the url type, and adds &quot;.com&quot; to the keyboard to match 
+url input.</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+ &lt;form&gt;<br>&nbsp;
+ Add your homepage:<br>&nbsp; &lt;input type=&quot;url&quot; name=&quot;homepage&quot;&gt;<br>
+ &lt;/form&gt;
+ </code>
+ </div>
+<hr>
+
+<h2>Input Type Week</h2>
+<p>The <code class="code">&lt;input type=&quot;week&quot;&gt;</code> allows the user to select a week and year.</p>
+<p>Depending on browser support, a date picker can show up in the input field.</p>
+<div style="border:solid;">
+<h3>Example</h3>
+<code class="code">
+ &lt;form&gt;<br>&nbsp;
+ Select a week:<br>&nbsp; &lt;input type=&quot;week&quot; name=&quot;week_year&quot;&gt;<br>
+ &lt;/form&gt;
+ </code>
+ </div>
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<a id="link" href="inputattributes" alt="Next" title="Next">Next</a>
+</div>
+
+<div class="footer">
+  <p><b>Designed</b> & <b>Developed</b> By<a href="http://instagram.com/itsmemanishtiwari">Manish Tiwari</a>.</p>
+<p><strong>DISCLAIMER:</strong> All website's content are constantly reviewed to avoid any kind of errors, but we cannot warrant full correctness of all content. 
+While using this site, you agree to have read and accepted our terms of use and privacy policy. <br>All Rights Reserved.&copy;</p>
+<strong>Follow us on</strong> <a href="http://fb.com/mycscode">Facebook</a>
+			 			 <a href="http://instagram.com/mycscode">Instagram</a>
+						 <a href="http://twitter.com/mycscode">Twitter</a>
+<br>
+<a href="termsofuse">Terms of Use</a>
+<a href="privacy">Privacy Policy</a>
+</div>
+
+
+</body>
+</html>

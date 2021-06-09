@@ -1,0 +1,452 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" 
+      type="image/png" 
+      href="/css/home/logo.png">
+<title>MYCSCODE |Learn Free Web Tutorial</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="Description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, and PHP.">
+<meta name="Keywords" content="HTML,CSS,JavaScript,PHP,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips,mycscode,my,cs,code,BASIC TO ADVANCED,EASY TO LEARN,LEARN FREE WEB,ADVANCED START,TUTORIAL LEARN,islands,coding,Learn web Designing,learn web devlopment,">
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9227713632689850",
+    enable_page_level_ads: true
+  });
+</script>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+<style>
+.header {
+	background-color: dodgerblue;
+	color: white;
+	padding: 10px;
+	font-family: courier;
+	text-align: center;
+	}
+
+.topnav {
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 24px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.topnav a:hover {
+  background-color: dodgerblue;
+  color: black;
+}
+
+.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+#link {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding:10px;
+    font-size:20px;
+    line-height: 25px;
+    border-radius: 4px;
+    background-color:red;
+}
+
+
+#link:hover {
+    background-color:dodgerblue;
+    color: black;
+
+}
+
+#link:active{
+	background-color: #f1f1f1;
+	color: black;
+}
+	
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    background-color: dodgerblue;
+    color:black;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 40px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+a{
+    display: inline;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding:10px;
+    line-height: 25px;
+
+}
+a:hover{
+	background-color: dodgerblue;
+	color: black;
+}
+a:active {
+  background-color: grey;
+  color: black;
+		
+}
+
+.code{
+    color: dodgerblue;
+}
+
+
+
+	
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    color: black;
+    text-align: center;
+    font-family:Verdana,sans-serif;
+    font-size:15px;
+}
+</style>
+</head>
+
+<body>
+<div class="header">
+  <h1>MYCSCODE</h1>
+<p style="text-align:right;font-size:25px;">Learn Free Web Tutorials.</p>
+</div>
+<div class="topnav" id="myTopnav">
+  <a href="/css/home/index" class="active">Home</a>
+  <a href="/html/learnhtml">HTML</a>
+  <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+      <h1 style="text-align:center;color:white;">CSS Content</h1>
+  <a href="cssintroduction">CSS Introduction</a>
+  <a href="csssyntax">CSS Syntax</a>
+  <a href="csscolors">CSS Colors</a>
+  <a href="cssbackground">CSS Background</a>
+  <a href="cssborders">CSS Borders</a>
+  <a href="cssmargins">CSS Margins</a>
+  <a href="csspadding">CSS Padding</a>
+  <a href="csshw">CSS Height/Width</a>
+  <a href="cssboxmodel">CSS Box Model</a>
+  <a href="cssoutline">CSS Outline</a>
+  <a href="csstext">CSS Text</a>
+  <a href="cssfonts">CSS Fonts</a>
+  <a href="cssicons">CSS Icons</a>
+  <a href="csslinks">CSS Links</a>
+  <a href="csslists">CSS Lists</a>
+  <a href="csstables">CSS Tables</a>
+  <a href="cssdisplay">CSS Display</a>
+  <a href="cssmw">CSS Max-width</a>
+  <a href="cssposition">CSS Position</a>
+  <a href="cssoverflow">CSS Overflow</a>
+  <a href="cssfloat">CSS Float</a>
+  <a href="cssib">CSS Inline-block</a>
+  <a href="cssalign">CSS Align</a>
+  <a href="cssopacity">CSS Opacity</a>
+  <a href="cssnavigationbar">CSS Navigation Bar</a> 
+  </div>
+</div>
+
+  <a style="font-size:25px;cursor:pointer;padding: 20px 24px;" onclick="openNav()">CSS</a>
+  <a href="/javascript/learnjavascript">JAVASCRIPT</a>
+  <a href="/php/learnphp">PHP</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;
+    <i class="fa fa-bars"></i>
+  </a>
+</div>    
+
+<div style="padding:15px 15px;font-size:25px">
+<marquee style="text-align:right;color:red;">Click on CSS to See the Content of the Tutorial.</marquee>
+<a id="link" href="csscolors" alt="Previous" title="Previous">Previous</a>
+<article style="background-color:#f1f1f1;padding-left:16px;font-size:20px;">
+
+<h1>CSS Backgrounds</h1>
+<br>
+
+<div style="width:80%;border:1px solid gray;padding:8px;background:#e1efbb url('mountain.jpg')">
+<p style="margin-right:150px;">The CSS background properties are used to define the background effects 
+for elements.</p>
+<p>CSS background properties:</p>
+<ul>
+  <li>background-color</li>
+  <li>background-image</li>
+  <li>background-repeat</li>
+  <li>background-attachment</li>
+  <li>background-position</li>
+</ul>
+</div>
+<hr>
+
+<h2>Background Color</h2>
+<p>The <code class="code">background-color</code> property specifies the background color of an element.</p>
+<p>The background color of a page is set like this:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div style="border:solid;">
+    <code class="code">
+body {<br>&nbsp;&nbsp;background-color: lightblue;<br>}</code>
+</div>
+</div>
+<p>With CSS, a color is most often specified by:</p>
+<ul>
+<li>a valid color name - like &quot;red&quot;</li>
+<li>a HEX value - like &quot;#ff0000&quot;</li>
+<li>an RGB value - like &quot;rgb(255,0,0)&quot;</li>
+</ul>
+<p>Look at <a href="/css/csscolors">CSS Color Values</a> for a complete 
+list of possible colors.</p>
+<p>In the example below, the <code class="code">&lt;h1&gt;, &lt;p&gt;, and &lt;div&gt;</code> elements have different background colors:</p>
+
+<h3>Example</h3>
+<div style="border:solid;"><code class="code">
+h1 {<br>&nbsp;&nbsp;background-color: green;<br>}<br><br>
+div {<br>&nbsp;&nbsp;background-color: lightblue;<br>}<br><br>p {<br>&nbsp;&nbsp;background-color: 
+yellow;<br>}</code>
+</div>
+
+<hr>
+
+<h2>Background Image</h2>
+<p>The <code class="code">background-image</code> property specifies an image to use as the background of an element.</p>
+<p>By default, the image is repeated so it covers the entire element.</p>
+<p>The background image for a page can be set like this:</p>
+<h3>Example</h3>
+<div style="border:solid;"><code class="code">
+body {<br>&nbsp;&nbsp;background-image: url(&quot;paper.gif&quot;);<br>}</code>
+</div>
+
+<p>Below is an example of a <strong>bad</strong> combination of text and background image. The text is 
+hardly readable:</p>
+<h3>Example</h3>
+<div style="border:solid;"><code class="code">
+body {<br>&nbsp;&nbsp;background-image: url(&quot;bgdesert.jpg&quot;);<br>}</code>
+</div>
+  <p><b>Note:</b> When using a background image, use an image that does not disturb the text.</p>
+<hr>
+
+<h2>Background Image - Repeat Horizontally or Vertically</h2>
+<p>By default, the <code class="code">background-image</code> property repeats an image both horizontally and vertically.</p>
+<p>Some images should be repeated only horizontally or vertically, or they will look strange, like this:</p>
+<h3>Example</h3>
+<div style="border:solid;"><code class="code">
+body
+{<br>
+&nbsp;&nbsp;background-image: url(&quot;gradient_bg.png&quot;);<br>
+}</code>
+</div>
+<p>If the image above is repeated only horizontally (<code class="code">background-repeat: repeat-x;</code>), the background will look 
+better:</p>
+
+<h3>Example</h3>
+<div style="border:solid;"><code class="code">
+body
+{<br>
+&nbsp;&nbsp;background-image: url(&quot;gradient_bg.png&quot;);<br>
+&nbsp;&nbsp;background-repeat: repeat-x;<br>
+}</code>
+</div>
+  <p><b>Tip:</b> To repeat an image vertically, set <code class="code">background-repeat: repeat-y;</code></p>
+
+<hr>
+
+<h2>Background Image - Set position and no-repeat</h2>
+<p>Showing the background image only once is also specified by the <code class="code">background-repeat</code> property:</p>
+<h3>Example</h3>
+<div style="border:solid;"><code class="code">
+body
+{<br>
+&nbsp;&nbsp;background-image: url(&quot;img_tree.png&quot;);<br>
+&nbsp;&nbsp;background-repeat: no-repeat;<br>
+}</code>
+</div>
+<p>In the example above, the background image is shown in the same place as the text. We want to change the position of the image, so that it does not 
+disturb the text too much.</p>
+<p>The position of the image is specified by the <code class="code">background-position</code> property:</p>
+
+<h3>Example</h3>
+<div style="border:solid;"><code class="code">
+body
+{<br>
+  &nbsp;
+background-image: url(&quot;img_tree.png&quot;);<br>
+  &nbsp;
+background-repeat: no-repeat;<br>
+  &nbsp;
+background-position: right top;<br>
+}</code>
+</div>
+<hr>
+
+<h2>Background Image - Fixed position</h2>
+<p>To specify that the background image should be fixed (will not scroll with the rest of the page), 
+use the <code class="code">background-attachment</code> property:</p>
+
+<h3>Example</h3>
+<div style="border:solid;"><code class="code">
+body
+{<br>
+&nbsp;&nbsp;background-image: url(&quot;img_tree.png&quot;);<br>
+&nbsp;&nbsp;background-repeat: no-repeat;<br>
+&nbsp;&nbsp;background-position: right top;<br>
+  &nbsp; background-attachment: fixed;<br>}</code>
+</div>
+<hr>
+
+<h2>Background - Shorthand property</h2>
+<p>To shorten the code, it is also possible to specify all the background properties in one 
+single property. This is called a shorthand property.</p>
+<p>The shorthand property for background is <code class="code">background</code>:</p>
+<h3>Example</h3>
+<div style="border:solid;"><code class="code">
+body {<br>&nbsp; background: #ffffff url(&quot;img_tree.png&quot;) no-repeat right top;<br>}</code></div>
+<p>
+When using the shorthand property the order of the property values is:</p>
+<ul>
+<li><code class="code">background-color</code></li>
+<li><code class="code">background-image</code></li>
+<li><code class="code">background-repeat</code></li>
+<li><code class="code">background-attachment</code></li>
+<li><code class="code">background-position</code></li>
+</ul>
+<p>It does not matter if one of the property values is missing, as long as the 
+other ones are in this order.</p>
+<hr>
+
+
+
+ 
+</article>
+<a id="link" href="cssborders" alt="Next" title="Next">Next</a>
+
+
+</div>
+
+<div class="footer">
+  <p><b>Designed</b> & <b>Developed</b> By<a href="http://instagram.com/itsmemanishtiwari">Manish Tiwari</a>.</p>
+<p><strong>DISCLAIMER:</strong> All website's content are constantly reviewed to avoid any kind of errors, but we cannot warrant full correctness of all content. 
+While using this site, you agree to have read and accepted our terms of use and privacy policy. <br>All Rights Reserved.&copy;</p>
+<strong>Follow us on</strong> <a href="http://fb.com/mycscode">Facebook</a>
+			 			 <a href="http://instagram.com/mycscode">Instagram</a>
+						 <a href="http://twitter.com/mycscode">Twitter</a>
+<br>
+<a href="termsofuse">Terms of Use</a>
+<a href="privacy">Privacy Policy</a>
+</div>
+
+
+
+</body>
+</html>
