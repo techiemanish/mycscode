@@ -1,0 +1,301 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" 
+      type="image/png" 
+      href="/php/home/logo.png">
+<title>MYCSCODE |Learn Free Web Tutorial</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="description" content="Free Web tutorials">
+<meta name="Description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, and PHP.">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="Keywords" content="HTML,CSS,JavaScript,PHP,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9227713632689850",
+    enable_page_level_ads: true
+  });
+</script>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+<style>
+.header {
+	background-color: dodgerblue;
+	color: white;
+	padding: 10px;
+	font-family: courier;
+	text-align: center;
+	}
+
+.topnav {
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 24px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.topnav a:hover {
+  background-color: dodgerblue;
+  color: black;
+}
+
+.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+#link {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding:10px;
+    font-size:20px;
+    line-height: 25px;
+    border-radius: 4px;
+    background-color:red;
+}
+
+
+#link:hover {
+    background-color:dodgerblue;
+    color: black;
+
+}
+
+#link:active{
+	background-color: #f1f1f1;
+	color: black;
+}
+	
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    background-color: dodgerblue;
+    color:black;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 40px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+a{
+    display: inline;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding:10px;
+    line-height: 25px;
+
+}
+a:hover{
+	background-color: dodgerblue;
+	color: black;
+}
+a:active {
+  background-color: grey;
+  color: black;
+		
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    color: black;
+    text-align: center;
+    font-family:Verdana,sans-serif;
+    font-size:15px;
+
+}
+
+</style>
+</head>
+
+<body>
+<div class="header">
+  <h1>MYCSCODE</h1>
+<p style="text-align:right;font-size:25px;">Learn Free Web Tutorials.</p>
+</div>
+<div class="topnav" id="myTopnav">
+  <a href="/php/home/index" class="active">Home</a>
+  <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+  <h1 style="text-align:center;color:white;">PHP Content</h1>
+  <a href="phpintroduction">PHP Introduction</a>
+  <a href="phpinstall">PHP Install</a>
+  <a href="phpsyntax">PHP Syntax</a>
+  <a href="phpvariables">PHP Variables</a>
+  <a href="phpechoprint">PHP Echo/Print</a>
+  <a href="phpdatatypes">PHP Data Types</a>
+  <a href="phpstrings">PHP Strings</a>
+  <a href="phpconstants">PHP Constants</a>
+  <a href="phpoperators">PHP operators</a>
+  <a href="phpifelseif">PHP IF...Else...IF</a>
+  <a href="phpswitch">PHP Switch</a>
+  <a href="phpwhileloops">PHP While Loops</a>
+  <a href="phpforloops">PHP For Loops</a>
+  <a href="phpfunctions">PHP Functions</a>
+  <a href="phparrays">PHP Arrays</a>
+  <a href="phpsortingarrays">PHP Sorting Arrays</a>
+  <a href="phpsuperglobals">PHP Superglobals</a> 
+  <a href="phpformhandling">PHP Form Handling</a> 
+  <a href="phpformvalidation">PHP Form Validation</a>
+  <a href="phpformrequired">PHP Form Required</a>
+  <a href="phpformurlemail">PHP Form URL/E-mail</a>
+  <a href="phpformcomplete">PHP Form Complete</a> 
+</div>
+</div>
+
+  <a href="/html/learnhtml">HTML</a>
+  <a href="/css/learncss">CSS</a>
+  <a href="/javascript/learnjavascript">JAVASCRIPT</a>
+  <a style="font-size:25px;cursor:pointer;padding: 20px 24px;" onclick="openNav()">PHP</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;
+    <i class="fa fa-bars"></i>
+  </a>
+</div>    
+
+
+<div style="padding:15px 15px;font-size:25px">
+<marquee style="text-align:right;color:red;">Click on PHP to See the Content of the Tutorial.</marquee>
+<article style="background-color:#f1f1f1;padding-left:16px;font-size:20px;">
+<h1>Welcome</h1>
+<p>Welcome to Learn PHP with <span style="color:red;font-family:courier;">MYCSCODE</span>. This website is for Web users learning to create their own Web pages.</p> 
+<p><span style="color:red;font-family:courier;">MYCSCODE</span> is one of the top destination to learn Web languages.</p>
+<h3>What You Should Already Know</h3>
+<p>Before you continue, you should have a basic understanding of HTML and CSS.</p>
+<h3>PHP</h3>
+<p>Hypertext Preprocessor is a free highly popular, open source scripting language. PHP scripts are executed on the server.
+<br/>It is a widely-used, free, and efficient alternative to competitors such as Microsoft's ASP.</p>
+<h3>Did You Know?</h3>
+<p>PHP has enough power to work at the core of <b>Wordpress</b>, the busiest blogging system on the web. It also has the degree of depth required to run <b>Facebook</b>, the web's largest social network!</p>
+<h4>Learning Speed</h4>
+<p>In this tutorial, the learning speed is your choice.</p>
+<p>Everything is up to you.</p>
+<p>If you are struggling, take a break, or reread the material.</p>
+</article>
+<a id="link" href="phpintroduction" alt="Start Link" title="Let's Start PHP">Let's Start PHP</a>
+
+
+</div>
+
+<div class="footer">
+  <p><b>Designed</b> & <b>Developed</b> By<a href="http://instagram.com/itsmemanishtiwari">Manish Tiwari</a>.</p>
+<p><strong>DISCLAIMER:</strong> All website's content are constantly reviewed to avoid any kind of errors, but we cannot warrant full correctness of all content. 
+While using this site, you agree to have read and accepted our terms of use and privacy policy. <br>All Rights Reserved.&copy;</p>
+<strong>Follow us on</strong> <a href="http://fb.com/mycscode">Facebook</a>
+			 			 <a href="http://instagram.com/mycscode">Instagram</a>
+						 <a href="http://twitter.com/mycscode">Twitter</a>
+<br>
+<a href="termsofuse">Terms of Use</a>
+<a href="privacy">Privacy Policy</a>
+</div>
+
+
+
+
+</body>
+</html>
